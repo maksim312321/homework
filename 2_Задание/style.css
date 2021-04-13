@@ -1,0 +1,121 @@
+
+/* задаем ширирну рабочей области и выраниваем по центру */
+body{
+    width: 1024px; 
+    margin: 0 auto;
+    font-size: 35px;
+    text-align: left;
+}
+
+.wrapper{
+    border: solid 2px black;
+    height: 500px;
+    width: 100%;
+    margin: 20px 0 20px;
+    padding: 30px 30px;
+}
+.block1{
+    background-color: green;
+    width: 200px;
+    height: 200px;
+}
+.block2{
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    overflow: hidden;
+}
+
+
+
+/* обтекание текста */
+._type1 .block1{
+    width: 20%;
+    float: left;
+}
+._type1 .block2{
+    display: inline;
+    margin-top: -200px;
+    padding-bottom: 1px;
+}
+.span_type1{
+    display: block;
+    background-color: blue;
+}
+
+/* слева без отступа */
+._type2 .block2{
+    position:static;
+    display: inline-block;
+    width: 80%;
+    margin-left: -9px;
+}
+._type2 .block1{
+    position: static;
+    display: inline-block;
+    width: 20%;
+    /* наверное это неправильно, но тут мои полномочия всё, окончены */
+    transform: translateY(-300px);
+}
+
+/* справа с отступом */
+._type3 .block2{
+    position:static;
+    display: inline-block;
+    width: 80%;
+    margin-left: -10px;
+}
+._type3 .block1{
+    position: static;
+    float: right;
+    width: 20%;
+}
+
+/* зеленый блок в центре */
+._type4 .block1{
+    position: absolute;
+    left:50%;
+    margin-left: -100px;
+    margin-top: 100px;
+}
+._type4 .block2{
+    position:static;
+    display: block;
+    width: 100%;
+}
+
+
+/* низкий синий блок */
+._type5 .block1{
+    position: relative;
+    float: right;
+    width: 20%;
+    height: 100%;
+}
+._type5 .block2{
+    display: inline-block;
+    position:relative;
+    width: 70%;
+    height: 10%;
+}
+
+
+/* центр зеленый текст обтекает справа вверху*/
+._type6 .block1{
+    width: 20%;
+    float: left;
+    /* margin-left: 250px;
+    margin-top: 250px; */
+    left: 300px;
+    top:300px;
+    transform: translate(400px , 200px);
+}
+._type6 .block2{
+    display: inline;
+    margin-top: -200px;
+    padding-bottom: 1px;
+}
+.span_type6{
+    display: block;
+    background-color: blue;
+}
