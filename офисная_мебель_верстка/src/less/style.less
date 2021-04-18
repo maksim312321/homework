@@ -70,7 +70,54 @@ body{
         }
     }
 }
+//информация в шапке
 .header-info{
     margin-top: 11px;
     height: 108px;
+}
+.info-pic{
+    margin-top: 43px;
+}
+.mobile{
+    .info-pic{
+        display: inline-block;
+        position: relative;
+    }
+    p{
+        display: inline-block;
+        margin-left: 7px;
+        transform: translateY(12px);
+        font-size: 10px;
+    }
+    a{
+        display: inline-block;
+        margin-left: 33px;
+        transform: translateY(-15px);
+        color:black;
+        font-size: 15px;
+        white-space: nowrap;  
+    }
+}
+.mail{
+    img{
+        margin-top: 46px;
+        margin-left: 18px;
+        }
+    .info-pic::after{
+        content: url(../img/лого.png);
+        position: absolute;
+    }
+}
+.logo{
+    &-bg{
+        position: absolute;
+        background-color:#F3F3F3;
+        width: 199px;
+        height: 105px;
+        margin-left: 80px;
+    }
+    img{
+        margin-left: 97px;
+        transform: translateY(-26px);
+    }
 }
