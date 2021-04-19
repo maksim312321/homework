@@ -15,6 +15,14 @@
 	font-weight: normal;
 	font-style: normal;
 }
+//futura new
+@font-face {
+	font-family: 'Futura_New';
+	src: url('../fonts/FuturaNewBook.eot');
+	src: local('☺'), url('../fonts/FuturaNewBook.woff') format('woff'), url('../fonts/FuturaNewBook.ttf') format('truetype'), url('../fonts/FuturaNewBook.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 body{
     font-family: Gotham_Pro;
     a:hover{
@@ -291,4 +299,78 @@ body{
             transform: translate(4px, 2px);
         }  
     }
+}
+// подвал
+.footer-bg{
+    height: 480px;
+    width: 100%;
+    background-color: black;
+}
+
+.footer{
+    font-family: Futura_New;
+    h1{
+        font-family: Futura_New;
+        font-size: 19px;
+        
+        letter-spacing: 0.2em;
+        display: block;
+        text-transform: uppercase;
+        color:white;
+        margin-bottom: 20px;
+    }
+
+    p{
+        font-size: 10px;
+        white-space: nowrap; 
+        letter-spacing: 0.2em;
+        display: block;
+        text-transform: uppercase;
+        color:white;
+        margin-bottom: 6px;
+    }
+}
+.footer-fst-line{
+    h1{
+        margin-top: 63px;
+    }
+}
+.footer-scnd-line{
+    h1{
+        margin-top: 52px;
+    }
+}
+
+
+// брейкпоинты
+@media (max-width: 1280px){
+.container{
+    width: 740px;
+    padding: 0;
+}
+.header{
+}
+.navigation-bg{
+    position: absolute;
+    background-color: black;
+    height: 70px;
+    width: 100%;
+    z-index: -1;
+}
+.navigation-menu{
+    margin-top: 23px;
+}
+.navigation-more{
+    display: none;
+}
+.logo{
+    margin-top: 16px;
+}
+}
+@media (max-width: 768px){
+    .container{
+        width: 90%;
+        padding: 0;
+    }
+
 }
