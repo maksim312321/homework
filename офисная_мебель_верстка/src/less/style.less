@@ -1,4 +1,5 @@
 // подключение шрифтов
+//light начертание
 @font-face {
 	font-family: 'Gotham_Pro';
 	src: url('../fonts/GothaProLig.eot');
@@ -6,9 +7,20 @@
 	font-weight: normal;
 	font-style: normal;
 }
-
+//normal начертание
+@font-face {
+	font-family: 'Gotham_Pro_Medium';
+	src: url('../fonts/GothaProMed.eot');
+	src: local('☺'), url('../fonts/GothaProMed.woff') format('woff'), url('../fonts/GothaProMed.ttf') format('truetype'), url('../fonts/GothaProMed.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 body{
     font-family: Gotham_Pro;
+    a:hover{
+        opacity: 70%;
+        transition: 0.2s;
+    }
 }
 .container{
     // background-color: red;
@@ -42,10 +54,7 @@ body{
         text-transform: uppercase;
         color:white;
         text-decoration: none;
-        &:hover{
-            opacity: 70%;
-            transition: 0.2s;
-        }
+
     }
     //первый блок навигации
     &-menu{
@@ -74,6 +83,20 @@ body{
 .header-info{
     margin-top: 11px;
     height: 108px;
+    font-family: Gotham_Pro_Medium; 
+    p{
+        color:black;
+        opacity: 50%;
+        display: inline-block;
+        font-size: 10px;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+        white-space: nowrap; 
+        font-size: 15px;
+        display: inline-block;
+    }
 }
 .info-pic{
     margin-top: 43px;
@@ -84,28 +107,30 @@ body{
         position: relative;
     }
     p{
-        display: inline-block;
         margin-left: 7px;
-        transform: translateY(12px);
-        font-size: 10px;
+        transform: translateY(13px);
+        text-transform: uppercase;
     }
     a{
-        display: inline-block;
-        margin-left: 33px;
-        transform: translateY(-15px);
-        color:black;
-        font-size: 15px;
-        white-space: nowrap;  
+        margin-left: 32px;
+        transform: translateY(-16px);  
     }
 }
 .mail{
-    img{
+    .convert{
+        position: absolute;
         margin-top: 46px;
         margin-left: 18px;
+        &-elemnt{
+            position: relative;
+            transform: translate(18px, 4px);
         }
-    .info-pic::after{
-        content: url(../img/лого.png);
-        position: absolute;
+        }
+    p{
+        transform: translate(25px, 19px);
+    }
+    a{
+        transform: translate(52px, -5px);
     }
 }
 .logo{
@@ -119,5 +144,54 @@ body{
     img{
         margin-left: 97px;
         transform: translateY(-26px);
+    }
+}
+.admin{
+    .info-pic{
+        position: absolute;
+        right: 0;
+        transform: translate(13px,1px);
+    }
+    p{
+        transform: translate(75px, 36px);
+    }
+    a{
+        transform: translate(15px, 21px);
+    }
+}
+.cart{
+    .info-pic{
+        position: absolute;
+        right: 14px;
+        margin-top: 44px;
+        &-black{
+            transform: translate(140px, 21px);
+            position: relative;
+            width: 26px;
+            height: 17px;
+            background-color: black;
+            border-radius: 4px;
+            &-triangle{
+                position: absolute;
+                width: 7px;
+                height: 6px;
+                background-color: black;
+                transform: translate(10px, 13px) rotate(45deg);
+            }
+            &-num{
+                display: block;
+                font-size: 11px;
+                position: absolute;
+                color:white;
+                right: 10px;
+                top: 2px;
+            }
+        }
+    }
+    p{
+        transform: translate(33px, 19px);
+    }
+    a{
+        transform: translate(46px, 4px);
     }
 }
