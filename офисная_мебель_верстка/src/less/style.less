@@ -405,6 +405,104 @@ body{
 .container{
     width: 740px;
     padding: 0;
+    .navigation-menu{
+        margin-top: 23px;
+    }
+    .navigation-more{
+        display: none;
+    }
+    .logo{
+        margin-top: 16px;
+    }
+    .header-info{
+        .mobile{
+            .info-pic{
+                display: inline-block;
+                position: relative;
+            }
+            p{
+                margin-left: 7px;
+                transform: translate(18px, -27px);
+                white-space: nowrap; 
+                text-transform: uppercase;
+            }
+            a{
+                font-size: 12px;
+                margin-left: 19px;
+                transform: translateY(-40px);  
+            }
+        }
+        .mail{
+            margin-top: 30px;
+            transform: translateX(-147px);
+            .convert{
+                position: absolute;
+                margin-top: 46px;
+                margin-left: 18px;
+                &-elemnt{
+                    position: relative;
+                    transform: translate(18px, 4px);
+                }
+                }
+            p{
+                transform: translate(50px, -13px);
+            }
+            a{
+                transform: translate(50px, -25px);
+            }
+        }
+        .admin{
+            margin-top: 30px;
+            .info-pic{
+                position: absolute;
+                right: 0;
+                transform: translate(129px,1px);
+            }
+            p{
+                transform: translate(120px, 36px);
+            }
+            a{
+                transform: translate(60px, 21px);
+            }
+        }
+        .cart{
+            .info-pic{
+                position: absolute;
+                right: 0px;
+                margin-top: 44px;
+                &-black{
+                    display: none;
+                    transform: translate(140px, 21px);
+                    position: relative;
+                    width: 26px;
+                    height: 17px;
+                    background-color: black;
+                    border-radius: 4px;
+                    &-triangle{
+                        position: absolute;
+                        width: 7px;
+                        height: 6px;
+                        background-color: black;
+                        transform: translate(10px, 13px) rotate(45deg);
+                    }
+                    &-num{
+                        display: block;
+                        font-size: 11px;
+                        position: absolute;
+                        color:white;
+                        right: 10px;
+                        top: 2px;
+                    }
+                }
+            }
+            p{
+                transform: translate(-15px, 39px);
+            }
+            a{
+                transform: translate(-6px, 24px);
+            }
+        }
+    }
 }
 .header{
 }
@@ -414,15 +512,6 @@ body{
     height: 70px;
     width: 100%;
     z-index: -1;
-}
-.navigation-menu{
-    margin-top: 23px;
-}
-.navigation-more{
-    display: none;
-}
-.logo{
-    margin-top: 16px;
 }
 }
 @media (max-width: 768px){

@@ -359,21 +359,104 @@ body a:hover {
     width: 740px;
     padding: 0;
   }
+  .container .navigation-menu {
+    margin-top: 23px;
+  }
+  .container .navigation-more {
+    display: none;
+  }
+  .container .logo {
+    margin-top: 16px;
+  }
+  .container .header-info .mobile .info-pic {
+    display: inline-block;
+    position: relative;
+  }
+  .container .header-info .mobile p {
+    margin-left: 7px;
+    transform: translate(18px, -27px);
+    white-space: nowrap;
+    text-transform: uppercase;
+  }
+  .container .header-info .mobile a {
+    font-size: 12px;
+    margin-left: 19px;
+    transform: translateY(-40px);
+  }
+  .container .header-info .mail {
+    margin-top: 30px;
+    transform: translateX(-147px);
+  }
+  .container .header-info .mail .convert {
+    position: absolute;
+    margin-top: 46px;
+    margin-left: 18px;
+  }
+  .container .header-info .mail .convert-elemnt {
+    position: relative;
+    transform: translate(18px, 4px);
+  }
+  .container .header-info .mail p {
+    transform: translate(50px, -13px);
+  }
+  .container .header-info .mail a {
+    transform: translate(50px, -25px);
+  }
+  .container .header-info .admin {
+    margin-top: 30px;
+  }
+  .container .header-info .admin .info-pic {
+    position: absolute;
+    right: 0;
+    transform: translate(129px, 1px);
+  }
+  .container .header-info .admin p {
+    transform: translate(120px, 36px);
+  }
+  .container .header-info .admin a {
+    transform: translate(60px, 21px);
+  }
+  .container .header-info .cart .info-pic {
+    position: absolute;
+    right: 0px;
+    margin-top: 44px;
+  }
+  .container .header-info .cart .info-pic-black {
+    display: none;
+    transform: translate(140px, 21px);
+    position: relative;
+    width: 26px;
+    height: 17px;
+    background-color: black;
+    border-radius: 4px;
+  }
+  .container .header-info .cart .info-pic-black-triangle {
+    position: absolute;
+    width: 7px;
+    height: 6px;
+    background-color: black;
+    transform: translate(10px, 13px) rotate(45deg);
+  }
+  .container .header-info .cart .info-pic-black-num {
+    display: block;
+    font-size: 11px;
+    position: absolute;
+    color: white;
+    right: 10px;
+    top: 2px;
+  }
+  .container .header-info .cart p {
+    transform: translate(-15px, 39px);
+  }
+  .container .header-info .cart a {
+    transform: translate(-6px, 24px);
+  }
   .navigation-bg {
     position: absolute;
     background-color: black;
     height: 70px;
     width: 100%;
     z-index: -1;
-  }
-  .navigation-menu {
-    margin-top: 23px;
-  }
-  .navigation-more {
-    display: none;
-  }
-  .logo {
-    margin-top: 16px;
   }
 }
 @media (max-width: 768px) {
