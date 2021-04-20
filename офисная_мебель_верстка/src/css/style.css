@@ -451,6 +451,23 @@ body a:hover {
   .container .header-info .cart a {
     transform: translate(-6px, 24px);
   }
+  .container .header-menu .pouf,
+  .container .header-menu .dekor,
+  .container .header-menu .bench {
+    display: none;
+  }
+  .container .header-menu .more {
+    transform: translate(700px, -108px);
+  }
+  .container .header-menu .more span p {
+    display: inline-block;
+    position: absolute;
+    font-size: 9px;
+    transform: translate(4px, 2px);
+  }
+  .container .footer-form {
+    margin-top: 170px;
+  }
   .navigation-bg {
     position: absolute;
     background-color: black;
@@ -463,5 +480,38 @@ body a:hover {
   .container {
     width: 90%;
     padding: 0;
+  }
+  .container .header-info .mobile,
+  .container .header-info .mail {
+    display: none;
+  }
+  .container .header-info .logo,
+  .container .header-info .admin,
+  .container .header-info .cart {
+    transform: translate(-337px, -20px);
+  }
+  .container .header-info .admin,
+  .container .header-info .cart {
+    transform: translate(-151px, -15px);
+    white-space: nowrap;
+  }
+  .container .header-info .admin .info-pic,
+  .container .header-info .cart .info-pic {
+    display: none;
+  }
+  .container .header-info .cart a {
+    transform: translateY(41px);
+  }
+  .container .header-info .admin a {
+    transform: translateY(55px);
+  }
+  .container .header-menu {
+    display: none;
+  }
+  .container .footer-scnd-line {
+    display: none;
+  }
+  .container .privacy {
+    transform: translate(-147px, 12px);
   }
 }
