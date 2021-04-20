@@ -278,7 +278,7 @@ body a:hover {
   display: block;
   text-transform: uppercase;
   color: white;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 .footer p {
   font-size: 10px;
@@ -293,7 +293,66 @@ body a:hover {
   margin-top: 63px;
 }
 .footer-scnd-line h1 {
-  margin-top: 52px;
+  margin-top: 53px;
+}
+.footer-form {
+  position: absolute;
+  right: 0;
+}
+.footer-form h1 {
+  transform: translateX(59px);
+}
+.footer-form input {
+  opacity: 70%;
+  color: white;
+  margin-top: 7px;
+  margin-bottom: 9px;
+  right: 7px;
+  font-family: Futura_New;
+  font-size: 18px;
+  background-color: black;
+  text-align: right;
+  width: 257px;
+  border: none;
+  transform: translateX(-14px);
+}
+.footer-form input::placeholder {
+  color: white;
+  text-align-last: left;
+  transform: translateX(-2px);
+}
+.footer-form .picture-on-form {
+  position: absolute;
+  transform: translate(-59px, -7px);
+}
+.footer-form .band {
+  transform: translateX(-14px);
+  width: 257px;
+  height: 3px;
+  background-color: white;
+}
+.footer-form .form-pic {
+  display: inline-block;
+  transform: translate(192px, 29px);
+}
+.footer-form .form-pic .facebook {
+  transform: translateX(7px);
+}
+.bottom-info {
+  margin-top: 106px;
+  font-family: Futura_New;
+  position: absolute;
+  font-size: 12px;
+  color: white;
+  opacity: 70%;
+}
+.bottom-info .copyright,
+.bottom-info .privacy {
+  display: inline-block;
+}
+.bottom-info .privacy {
+  transform: translateX(829px);
+  text-decoration: underline;
 }
 @media (max-width: 1280px) {
   .container {

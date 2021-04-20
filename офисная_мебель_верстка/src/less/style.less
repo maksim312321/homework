@@ -317,7 +317,7 @@ body{
         display: block;
         text-transform: uppercase;
         color:white;
-        margin-bottom: 20px;
+        margin-bottom: 18px;
     }
 
     p{
@@ -337,10 +337,68 @@ body{
 }
 .footer-scnd-line{
     h1{
-        margin-top: 52px;
+        margin-top: 53px;
     }
 }
-
+.footer-form{
+    position: absolute;
+    right: 0;
+    h1{
+        transform: translateX(59px);
+    }
+    input{
+        &::placeholder{
+            color:white;
+            text-align-last: left;
+            transform: translateX(-2px);
+        }
+        opacity: 70%;
+        color:white;
+        margin-top: 7px;
+        margin-bottom: 9px;
+        right: 7px;
+        font-family: Futura_New;
+        font-size: 18px;
+        background-color: black;
+        text-align: right;
+        width: 257px;
+        border:none;
+        transform: translateX(-14px);
+        // border-bottom: solid 3px white;
+    }
+    .picture-on-form{
+        position: absolute;
+        transform: translate(-59px, -7px);
+    }
+    .band{
+        transform: translateX(-14px);
+        width: 257px;
+        height: 3px;
+        background-color: white;
+    }
+    .form-pic{
+        display: inline-block;
+        transform: translate(192px, 29px);
+        .facebook{
+            transform: translateX(7px);
+        }
+    }
+}
+.bottom-info{
+    margin-top: 106px;
+    font-family: Futura_New;
+    position: absolute;
+    font-size: 12px;
+    color: white;
+    opacity: 70%;
+    .copyright, .privacy{
+        display: inline-block;
+    }
+    .privacy{
+        transform: translateX(829px);
+        text-decoration: underline;
+    }
+}
 
 // брейкпоинты
 @media (max-width: 1280px){
