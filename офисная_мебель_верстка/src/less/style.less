@@ -52,12 +52,10 @@ body{
     width: 100%;
     z-index: -1;
     }
-
     // для всех ссылок
     a{
         font-size: 10px;
         line-height: 11px;
-
         letter-spacing: 0.1em;
         text-transform: uppercase;
         color:white;
@@ -76,14 +74,14 @@ body{
     &-more{
         display: inline-block;
         position: relative;
-        margin-left: 406px;
+        margin-left: 390px;
         .name-menu{
-            display: inline-block;  
-            transform: translateX(-10px);
+            display: inline-block; 
+            padding-right: 10px;
         }
         .btn-menu{
             display: inline-block;  
-            transform: translateY(-1px);
+            
         }
     }
 }
@@ -209,97 +207,60 @@ body{
     width: 100%;
     height: 1px;
     background-color: #EAEBED;
-
 }
+
 //меню шапки
 .header-menu{
-    a:hover{
-        text-decoration: none;
-        opacity: 70%;
-        transition: 0.2s;
-    }
-    transform: translateY(-4px);
-    width: 100%;
-    height: 108px;
+    font-family: Gotham_Pro_Medium;
+    margin-top: 19px;
+    margin-left: 27px;
+    margin-bottom: 19px;
 }
-.foropacity{
-    opacity: 30%;
-}
+
 .menu-icon{
-    margin-top: 22px;
-    margin-left: 14px;
-    margin-right: 52px;
-    display:inline-block;
+    .icon{
+        div{
+            width: 100px;
+        }
+        div:hover{
+            opacity: 70%;
+            transition: 0.2s;
+        }
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    display: inline-block;
     img{
         display: block;
-        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
     }
+    margin-right: 24px;
     span{
         display: block;
-        margin-top: 10px;
-        font-family: Gotham_Pro_Medium; 
-        color:black;
+        text-align: center;
+        padding-top: 11px;
         font-size: 11.3023px;
-        text-transform: uppercase;
+        line-height: 13px;
+        text-align: center;
         letter-spacing: 0.1em;
-    };
-}
-.armchair{
-    span{
-        transform: translateX(-11px);
+        color: black;
+        text-transform: uppercase;
     }
-}
-.lamp{
-    transform: translateX(18px);
-    span{
-        transform: translateX(-38px);
+    p{
+        display: inline;
+        position: absolute;
+
     }
-}
-.sofa{
-    transform: translateX(-24px);
-    span{
-        transform: translateX(-4px);
-    }
-}
-.table{
-    transform: translateX(-29px);
-    width: 50px;
-    span{
-        transform: translateX(-5px);
-    }
-}
-.chair{
-    transform: translateX(-6px);
-    span{
-        transform: translateX(-10px);
-    }
-}
-.pouf{
-    transform: translateX(11px);
-    span{
-        transform: translateX(-2px);
-    }
-}
-.dekor{
-    transform: translateX(17px);
-    span{
-        transform: translateX(-4px);
-    }
-}
-.bench{
-    transform: translate(38px, -1px);
 }
 .more{
-    transform: translateX(55px);
-    span{
-        p{
-            display: inline-block;
-            position: absolute;
-            font-size: 9px;
-            transform: translate(4px, 2px);
-        }  
-    }
+    position: absolute;
 }
+
+
+
+
 // подвал
 .footer-bg{
     height: 480px;
@@ -307,7 +268,7 @@ body{
     background-color: black;
 }
 
-.footer{
+footer{
     font-family: Futura_New;
     h1{
         font-family: Futura_New;
@@ -320,7 +281,7 @@ body{
         margin-bottom: 18px;
     }
 
-    p{
+    a{
         font-size: 10px;
         white-space: nowrap; 
         letter-spacing: 0.2em;
@@ -328,6 +289,12 @@ body{
         text-transform: uppercase;
         color:white;
         margin-bottom: 6px;
+        &:hover{
+            color:white;
+            text-decoration: none;
+            transition: 0.2s;
+            opacity: 70%;
+        }
     }
 }
 .footer-fst-line{
@@ -517,9 +484,6 @@ body{
                     transform: translate(4px, 2px);
                 }  
             }
-        }
-        .more{
-
         }
     }
     .footer-form{
