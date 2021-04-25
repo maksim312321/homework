@@ -20,6 +20,13 @@
 	font-family: 'Futura_New';
 	src: url('../fonts/FuturaNewBook.eot');
 	src: local('☺'), url('../fonts/FuturaNewBook.woff') format('woff'), url('../fonts/FuturaNewBook.ttf') format('truetype'), url('../fonts/FuturaNewBook.svg') format('svg');
+	font-weight:500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Futura_New_Medium';
+	src: url('../fonts/FuturaNewDemi.eot');
+	src: local('☺'), url('../fonts/FuturaNewDemi.woff') format('woff'), url('../fonts/FuturaNewDemi.ttf') format('truetype'), url('../fonts/FuturaNewDemi.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -291,7 +298,17 @@ body{
 
 //товары
 .products{
-    margin-top: 30px;
+    .product{
+        text-decoration: none;
+    }
+    .product:hover{
+        .wrapper{
+            opacity: 70%;
+            transition: 0.5s;
+        }
+    
+    }
+    margin-top: 40px;
     .wrapper{
         height: 410px;
         .cover-art{
@@ -312,13 +329,21 @@ body{
             }
         }
         .cover-text{
+            div{
             h3{
-                display: block;
-                font-family: Futura_New;
+                width: 200px;
+                display: inline-block;
+                font-family: Futura_New_Medium;
                 font-size: 17px;
-
+                color:black;
                 letter-spacing: 0.2em;
                 text-transform: uppercase;       
+            }
+            img{
+                display: inline-block;
+                position: relative;
+                bottom:15px;
+            }
             }
             p{
                 font-family: Futura_New;
@@ -334,10 +359,13 @@ body{
                 }
             }
             .new-price{
+                font-family: Futura_New_Medium;
                 font-size: 24px;
                 color:black;
                 .old-price{
+                    font-family: Futura_New_Medium;
                     font-size: 14px;
+                    color: grey;
                     text-decoration: line-through;
                 }
             }
@@ -345,7 +373,7 @@ body{
     }
 }
 
-
+//подробности
 
 
 // подвал
