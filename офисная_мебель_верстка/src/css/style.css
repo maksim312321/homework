@@ -220,6 +220,82 @@ body a:hover {
 .more {
   position: absolute;
 }
+.advantages {
+  margin-top: 30px;
+}
+.adv img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+.adv h3 {
+  display: block;
+  font-family: Gotham_Pro_Medium;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 23px;
+}
+.adv p {
+  font-family: Futura_New;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #000000;
+  opacity: 0.4;
+}
+.products {
+  margin-top: 30px;
+}
+.products .wrapper {
+  height: 410px;
+}
+.products .wrapper .cover-art .product-availability {
+  position: absolute;
+  background-color: #000;
+  width: 85px;
+  height: 15px;
+}
+.products .wrapper .cover-art .product-availability p {
+  font-family: Futura_New;
+  color: white;
+  font-size: 10px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+.products .wrapper .cover-text h3 {
+  display: block;
+  font-family: Futura_New;
+  font-size: 17px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+.products .wrapper .cover-text p {
+  font-family: Futura_New;
+  display: block;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5);
+}
+.products .wrapper .cover-text p span {
+  color: black;
+  text-decoration: underline;
+}
+.products .wrapper .cover-text .new-price {
+  font-size: 24px;
+  color: black;
+}
+.products .wrapper .cover-text .new-price .old-price {
+  font-size: 14px;
+  text-decoration: line-through;
+}
 .footer-bg {
   height: 480px;
   width: 100%;
