@@ -36,54 +36,41 @@
 
             <!-- информация в шапке -->
             <div class="header-info">
-                <div class="row">
-                    <!-- телефон -->
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                        <div class="mobile">
-                            <img class = "info-pic" src="../src/img/телефон.png" alt="телефон">
-                            <p> ваш город:<p id = "city">Москва</p></p>
-                            <!-- <a href="#">+8-800-2000-600</a> -->
-                        </div>
+                <div class="wrapper1">
+                    <div class="phone header-info-element">
+                        <img  src="img/телефон.png" alt="телефон">
+                        <p class = "location lighter">ваш город: <span id = "city">Москва</span></p>
+                        <p id = "tel" class = "phone darker">8-800-2000-600</p>
                     </div>
-                    <!-- майл -->
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                        <div class="mail">
-                            <img class = "info-pic convert" src="../src/img/мэйл.png" alt="мэйл">
-                            <img class = "info-pic convert-elemnt" src="../src/img/элементконверта.png" alt="элементконверта">
-                            <p>Напишите нам</p>
-                            <a href="#">hello@riter.ru</a>
-                        </div>
-                    </div>
-                    <!-- лого -->
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                        <div class="logo">
-                            <div class="logo-bg">
+                    <div class="mail header-info-element">
+                        <img src="img/мэйл1.png" alt="почта">
 
-                            </div>
-                                <img wclassth = 170.26px height = 66px class = "info-pic" src="../src/img/лого.png" alt="лого">
-                        </div>
+                        <p class = "lighter">Напишите нам</p>
+                        <p class = "darker">hello@ritter.ru</p>
                     </div>
-                    <!-- авторизация -->
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                        <div class="admin">
-                            <img class = "info-pic" src="../src/img/челик.png" alt="челик">
-                            <p>Личный кабинет</p>
-                            <a href="#">Вход/регистрация</a>
+                </div>
+                
+                <div class="logo">
+                    <a href="#">
+                    <img  src="img/лого.png" width=100% alt="лого">
+                    </a>
+                </div>
+
+                <div class="wrapper2">
+                    <a href="#">
+                        <div class="account header-info-element">
+                            <img  src="img/челик.png" alt="аккаунт">
+                            <p class = "lighter">Личный кабинет</p>
+                            <p class = "darker">Вход/регистрация</p>
                         </div>
-                    </div>
-                    <!-- корзина -->
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                        <div class="cart">
-                            <img class = "info-pic" src="../src/img/корзина.png" alt="корзина">
-                            <div class="info-pic-black">
-                                 <div class="info-pic-black-triangle">                              
-                                 </div>      
-                                <span class= info-pic-black-num>2</span>
-                            </div>
-                            <p>Товаров на сумму</p>
-                            <a href="#">320 000 Р</a>
+                    </a>
+                    <a href="#">
+                        <div class="cart header-info-element">
+                            <img  src="img/корзина.png" alt="коризна">
+                            <p class = "lighter">Товаров на сумму</p>
+                            <p class = "darker">320 000 Р</p>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </header>

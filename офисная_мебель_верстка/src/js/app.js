@@ -1,15 +1,8 @@
-
-ymaps.ready(init);
-
-function init(){
-  ymaps.geolocation.get({
-      // Зададим способ определения геолокации
-      // на основе ip пользователя.
-      provider: 'yandex',
-      // Включим автоматическое геокодирование результата.
-      autoReverseGeocode: true
-  }).then(function (result) {
-      // Выведем результат геокодирования.
-      console.log(result.geoObjects.get(0).properties.get('metaDataProperty'));
-  });
-}
+ymaps.ready(function (){
+    var city = ymaps.geolocation.city;
+    city = document.getElementById('city');
+    var tel = document.getElementById('tel');
+    if(city.text != "Москва"){
+    tel.innerHTML= "+7 900 0000 777"
+    }
+})
