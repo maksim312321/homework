@@ -471,7 +471,7 @@ footer a:hover {
   font-family: Futura_New;
   font-size: 18px;
   background-color: black;
-  text-align: right;
+  text-align: left;
   width: 257px;
   border: none;
   transform: translateX(-14px);
@@ -494,12 +494,11 @@ footer a:hover {
   height: 3px;
   background-color: white;
 }
-.footer-form .form-pic {
+.footer-form .form-pic a {
+  margin-top: 10px;
   display: inline-block;
-  transform: translate(192px, 29px);
-}
-.footer-form .form-pic .facebook {
-  transform: translateX(7px);
+  position: relative;
+  left: 200px;
 }
 .bottom-info {
   margin-top: 106px;
