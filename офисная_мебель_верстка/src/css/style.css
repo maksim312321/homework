@@ -13,6 +13,13 @@
   font-style: normal;
 }
 @font-face {
+  font-family: 'Gotham_Pro_Bold';
+  src: url('../fonts/GothaProBla.eot');
+  src: local('☺'), url('../fonts/GothaProBla.woff') format('woff'), url('../fonts/GothaProBla.ttf') format('truetype'), url('../fonts/GothaProBla.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: 'Futura_New';
   src: url('../fonts/FuturaNewBook.eot');
   src: local('☺'), url('../fonts/FuturaNewBook.woff') format('woff'), url('../fonts/FuturaNewBook.ttf') format('truetype'), url('../fonts/FuturaNewBook.svg') format('svg');
@@ -55,9 +62,10 @@ body button {
   color: white;
   line-height: 12px;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 12px;
   height: 40px;
   width: 129px;
+  letter-spacing: 2px;
   background: linear-gradient(93.8deg, #807fd4 0%, #609ce2 0.01%, #2346ff 100%);
   box-shadow: 0px 5px 12px rgba(71, 120, 239, 0.6);
   border-radius: 4px;
@@ -241,6 +249,7 @@ body button:active {
 .slider .header-slider button {
   width: 224px;
   height: 50px;
+  line-height: 15px;
 }
 .slider img {
   position: relative;
@@ -257,11 +266,11 @@ body button:active {
   height: 6px;
   background: #D7E4F4;
   border-radius: 2px;
+  transition: 0.2s;
 }
 .slider .slider-switch .wrap:hover {
   width: 44px;
   background: #2D54FB;
-  transition: 0.2s;
 }
 .advantages {
   margin-top: 30px;
@@ -463,6 +472,7 @@ body button:active {
 }
 .brands {
   margin-top: 109px;
+  margin-bottom: 80px;
 }
 .brands h1 {
   text-align: center;
@@ -477,6 +487,89 @@ body button:active {
 }
 .brands .row img {
   margin-bottom: 35px;
+}
+.feedback {
+  height: 633px;
+  width: 100%;
+  background-color: #F7F7F7;
+  background-size: 1400px;
+  /* Современные браузеры */
+}
+.feedback .feedback-header {
+  margin-top: 32px;
+  margin-left: 95px;
+}
+.feedback .feedback-header h1 {
+  color: black;
+  font-family: Gotham_Pro_Bold;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.feedback .feedback-header a {
+  font-family: Gotham_Pro;
+  font-size: 13px;
+  line-height: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
+  opacity: 0.7;
+}
+.feedback .feedback-header a:hover {
+  text-decoration: none;
+  opacity: 0.5;
+}
+.feedback .feedback-switch {
+  position: relative;
+  bottom: 75px;
+  left: 380px;
+}
+.feedback .feedback-switch a {
+  padding: 15px;
+}
+.feedback .feedback-headline {
+  display: inline-block;
+}
+.feedback .feedback-blog .bloger {
+  display: inline-block;
+  position: relative;
+  right: 30px;
+}
+.feedback .feedback-blog .bloger-avatar {
+  position: relative;
+  bottom: 30px;
+}
+.feedback .feedback-blog .bloger-about {
+  margin-top: 30px;
+}
+.feedback .feedback-blog .bloger-about h1 {
+  font-family: Futura_New_Medium;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: none;
+  margin-bottom: 5px;
+}
+.feedback .feedback-blog .bloger-about p {
+  font-family: Futura_New;
+  font-size: 10px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #000000;
+  opacity: 0.5;
+  margin-bottom: 5px;
+}
+.feedback .feedback-blog .bloger-about a {
+  font-family: Futura_New_Medium;
+  text-decoration: none;
+  color: #000000;
+  opacity: 0.5;
+}
+.feedback .feedback-blog .bloger-review {
+  width: 455px;
+  height: 155px;
+  background: red;
+  box-shadow: -10px 14px 60px rgba(0, 0, 0, 0.07);
+  border-radius: 0 50px 50px 50px;
 }
 .footer-bg {
   height: 480px;
