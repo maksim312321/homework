@@ -1,0 +1,26 @@
+p{
+    text-align: center;
+    font-size: 50px;
+}
+.game-field{
+    position: relative;
+    height: 700px;
+    width: 800px;
+    background-color: grey;
+    margin-left: auto;
+    margin-right: auto;
+}
+.player1{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+.player2{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    right: 0;
+    bottom: 0;
+}
