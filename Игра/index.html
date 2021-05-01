@@ -8,14 +8,25 @@
     <title>Document</title>
 </head>
 <body>
-    <p>GAME</p>
-    <div class="game-field">
-        <div class="player1">
-
+    <div id="game">
+        <h1>game</h1>
+        <div class="game-field">
+            <div class="player1">
+    
+            </div>
+            <div class="player2">
+    
+            </div>
         </div>
-        <div class="player2">
-
-        </div>
+        <button onclick="showGameRegistration()">Назад</button>
+    </div>
+    <div class="game-registration">
+        <input id = "p1" type="text" placeholder="размер первого игрока">
+        <input id = "p2" type="text" placeholder="размер второго игрока">
+        <p>Правила ввода. <br> Первый игрок всегда больше второго;<br>Первый игрок не может быть больше 300; <br> Нельзя вводить отрицательные значения</p>
+        <p>*скорость игрока будет пропорциональна его размеру</p>
+        <p id = "p"></p>
+        <button onclick="showGameField()">начать</button>
     </div>
 <script src = "app.js">
 </script>
