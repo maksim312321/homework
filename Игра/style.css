@@ -5,7 +5,7 @@ h1{
 }
 .game-field{
     position: relative;
-    height: 700px;
+    height: 800px;
     width: 800px;
     background-color: grey;
     margin-left: auto;
