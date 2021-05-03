@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+    </script>
     <link rel="stylesheet" href="css/style.css">
     <title>Офисная мебель</title>
 </head>
 <body>
     <div class="navigation-bg"></div>
     <div class="container">
-        <div class="header">
+        <header>
             <!-- навигация -->
             <div class="navigation">
                 <!-- первый блок навигации -->
@@ -34,57 +36,44 @@
 
             <!-- информация в шапке -->
             <div class="header-info">
-                <div class="row">
-                    <!-- телефон -->
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                        <div class="mobile">
-                            <img class = "info-pic" src="../src/img/телефон.png" alt="телефон">
-                            <p>ваш город: пермь</p>
-                            <a href="#">+7 495 290-34-84</a>
-                        </div>
+                <div class="wrapper1">
+                    <div class="phone header-info-element">
+                        <img  src="img/телефон.png" alt="телефон">
+                        <p class = "location lighter">ваш город: <span id = "city">Москва</span></p>
+                        <p id = "tel" class = "phone darker">+8 800 2000 600</p>
                     </div>
-                    <!-- майл -->
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                        <div class="mail">
-                            <img class = "info-pic convert" src="../src/img/мэйл.png" alt="мэйл">
-                            <img class = "info-pic convert-elemnt" src="../src/img/элементконверта.png" alt="элементконверта">
-                            <p>Напишите нам</p>
-                            <a href="#">hello@riter.ru</a>
-                        </div>
-                    </div>
-                    <!-- лого -->
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                        <div class="logo">
-                            <div class="logo-bg">
+                    <div class="mail header-info-element">
+                        <img src="img/мэйл1.png" alt="почта">
 
-                            </div>
-                                <img width = 170.26px height = 66px class = "info-pic" src="../src/img/лого.png" alt="лого">
-                        </div>
-                    </div>
-                    <!-- авторизация -->
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                        <div class="admin">
-                            <img class = "info-pic" src="../src/img/челик.png" alt="челик">
-                            <p>Личный кабинет</p>
-                            <a href="#">Вход/регистрация</a>
-                        </div>
-                    </div>
-                    <!-- корзина -->
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                        <div class="cart">
-                            <img class = "info-pic" src="../src/img/корзина.png" alt="корзина">
-                            <div class="info-pic-black">
-                                 <div class="info-pic-black-triangle">                              
-                                 </div>      
-                                <span class= info-pic-black-num>2</span>
-                            </div>
-                            <p>Товаров на сумму</p>
-                            <a href="#">320 000 Р</a>
-                        </div>
+                        <p class = "lighter">Напишите нам</p>
+                        <p class = "darker">hello@ritter.ru</p>
                     </div>
                 </div>
+                
+                <div class="logo">
+                    <a href="#">
+                    <img  src="img/лого.png" width=100% alt="лого">
+                    </a>
+                </div>
+
+                <div class="wrapper2">
+                    <a href="#">
+                        <div class="account header-info-element">
+                            <img  src="img/челик.png" alt="аккаунт">
+                            <p class = "lighter">Личный кабинет</p>
+                            <p class = "darker">Вход/регистрация</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="cart header-info-element">
+                            <img  src="img/корзина.png" alt="коризна">
+                            <p class = "lighter">Товаров на сумму</p>
+                            <p class = "darker">320 000 Р</p>
+                        </div>
+                    </a>
+                </div>
             </div>
-        </div>
+        </header>
     </div>
 
     <!-- разграничивающая линия -->
@@ -93,119 +82,496 @@
 <!-- меню шапки -->
 <div class="container">
     <div class="header-menu">
+        <div class="row">    
         <!-- кресло -->
         <div class="menu-icon armchair">
-            <a href="#">
-                <img class = foropacity src="img/кресла.png" alt="кресла">
-                <span>кресла</span>
+            <a class = "icon" href="#">
+                <div>
+                    <img src="img/кресла.png" alt="кресла" >
+                    <span>кресла</span>
+                </div>
             </a>
         </div>
         <!-- лампа -->
         <div class="menu-icon lamp">
-            <a href="#">
-                <img class = foropacity src="img/светильник.png" alt="светильник">
-                <span>светильники</span>
+            <a class = "icon" href="#">
+                <div>
+                    <img src="img/светильник.png" alt="светильник" >
+                    <span>светильники</span>
+                </div>
             </a>
         </div>
         <!-- кресло -->
         <div class="menu-icon sofa">
-            <a href="#">
-                <img class = foropacity src="img/диван.png" alt="диван">
-                <span>диваны</span>
+            <a class = "icon" href="#">
+                <div>
+                    <img src="img/диван.png" alt="диван" >
+                    <span>диваны</span>
+                </div>
             </a>
         </div>
-        <!-- почему то иконка стола занимает всю ро(исправил это в css)-->
         <!-- стол -->
-        <div class="menu-icon table">
-            <a href="#">
-                <img class = foropacity src="img/стол.png" alt="стол">
-                <span>столы</span>
+        <div class="menu-icon taable">
+            <a class = "icon" href="#">
+                <div>
+                    <img src="img/стол.png" alt="стол" >
+                    <span>столы</span>
+                </div>
             </a>
         </div>
         <!-- стул -->
         <div class="menu-icon chair">
-            <a href="#">
-                <img src="img/стул.png" alt="стул">
-                <span>стулья</span>
+            <a class = "icon" href="#">
+                <div>
+                    <img src="img/стул.png" alt="стул" >
+                    <span>стулья</span>
+                </div>
             </a>
         </div>
         <!-- пуфик -->
         <div class="menu-icon pouf">
-            <a href="#">
-                <img src="img/пуфик.png" alt="пуфик">
-                <span>пуфы</span>
+            <a class = "icon" href="#">
+                <div>
+                    <img src="img/пуфик.png" alt="пуфик" >
+                    <span>пуфы</span>
+                </div>
             </a>
         </div>
         <!-- колонна -->
         <div class="menu-icon dekor">
-            <a href="#">
-                <img src="img/колонна.png" alt="колонна">
-                <span>декор</span>
+            <a class = "icon" href="#">
+                <div>
+                    <img src="img/колонна.png" alt="колонна" >
+                    <span>декор</span>
+                </div>
             </a>
         </div>
         <!-- лавка -->
         <div class="menu-icon bench">
-            <a href="#">
-                <img src="img/лавка.png" alt="лавка">
-                <span>лавки</span>
+            <a class = "icon" href="#">
+                <div>
+                    <img src="img/лавка.png" alt="лавка" >
+                    <span>лавки</span>
+                </div>
             </a>
         </div>
         <!-- еще -->
         <div class="menu-icon more">
-            <a href="#">
-                <img src="img/еще.png" alt="еще">
-                <span>еще <p> ▼</p></span>
+            <a class = "icon" href="#">
+                <div>
+                    <img src="img/еще.png" alt="еще" >
+                    <span>еще<p>▼</p></span>
+                </div>
             </a>
+        </div>
+        </div>
+    </div>
+<!-- преимущества -->
+<div class="row">
+    <div class="advantages">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+            <div class="adv">
+                <img src="img/paper-plane.png" alt="самолётик">
+                <h3>Быстрая доставка</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Fugiat vero, distinctio magnam qui dolor voluptates excepturi perspiciatis delectus 
+
+                </p>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+            <div class="adv">
+                <img src="img/armchair.png" alt="кресло">
+                <h3>30 тыс.+ моделей</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Fugiat vero, distinctio magnam qui dolor voluptates excepturi perspiciatis delectus 
+
+                </p>
+            </div>             
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+            <div class="adv">
+                <img src="img/quality.png" alt="алмаз">
+                <h3>Только оригиналы</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Fugiat vero, distinctio magnam qui dolor voluptates excepturi perspiciatis delectus 
+
+                </p>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+            <div class="adv">
+                <img src="img/discount.png" alt="скидка">
+                <h3>110% низкие цены</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Fugiat vero, distinctio magnam qui dolor voluptates excepturi perspiciatis delectus 
+                </p>
+            </div>
         </div>
     </div>
 </div>
+<!-- товары-->
+<div class="all-products">
+    <div class="row">
+        <div class="products">
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                <a href="#" class = "product">
+                    <div class="wrapper">
+                        <div class="cover-art">
+                            <div class = "product-availability">
+                                <p>в наличии</p>
+                            </div>
+                            <img src="img/стул-товар.png" alt="">
+                        </div>
+                        <div class="cover-text">
+                            <div>
+                                <h3> Стул такой-то марки</h3>
+                                <img src="img/избранное.png" alt="избранное">
+                            </div>
+                            <p>Арт. 42342347</p>
+                            <p>Производитель: <span>KOLBINS</span></p>
+                            <p class= "new-price">152 810 Р <span class= "old-price">432 810 Р</span></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6">
+            <a href="#" class = "product">
+                <div class="wrapper">
+                    <div class="cover-art">
+                        <div class = "product-availability">
+                            <p>в наличии</p>
+                        </div>
+                        <img src="img/стул-товар.png" alt="">
+                    </div>
+                    <div class="cover-text">
+                        <div>
+                            <h3> Стул такой-то марки</h3>
+                            <img src="img/избранное.png" alt="избранное">
+                        </div>
+                        <p>Арт. 42342347</p>
+                        <p>Производитель: <span>KOLBINS</span></p>
+                        <p class= "new-price">152 810 Р <span class= "old-price">432 810 Р</span></p>
+                    </div>
+                </div>
+            </a>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                <a href="#" class = "product">
+                    <div class="wrapper">
+                        <div class="cover-art">
+                            <div class = "product-availability">
+                                <p>в наличии</p>
+                            </div>
+                            <img src="img/стул-товар.png" alt="">
+                        </div>
+                        <div class="cover-text">
+                            <div>
+                                <h3> Стул такой-то марки</h3>
+                                <img src="img/избранное.png" alt="избранное">
+                            </div>
+                            <p>Арт. 42342347</p>
+                            <p>Производитель: <span>KOLBINS</span></p>
+                            <p class= "new-price">152 810 Р <span class= "old-price">432 810 Р</span></p>
+                        </div>
+                    </div> 
+                </a>          
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                <a href="#" class = "product">
+                    <div class="wrapper">
+                        <div class="cover-art">
+                            <div class = "product-availability">
+                                <p>в наличии</p>
+                            </div>
+                            <img src="img/стул-товар.png" alt="">
+                        </div>
+                        <div class="cover-text">
+                            <div>
+                                <h3> Стул такой-то марки</h3>
+                                <img src="img/избранное.png" alt="избранное">
+                            </div>
+                            <p>Арт. 42342347</p>
+                            <p>Производитель: <span>KOLBINS</span></p>
+                            <p class= "new-price">152 810 Р <span class= "old-price">432 810 Р</span></p>
+                        </div>
+                    </div> 
+                </a>        
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="products">
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                <a href="#" class = "product">
+                    <div class="wrapper">
+                        <div class="cover-art">
+                            <div class = "product-availability">
+                                <p>в наличии</p>
+                            </div>
+                            <img src="img/стул-товар.png" alt="">
+                        </div>
+                        <div class="cover-text">
+                            <div>
+                                <h3> Стул такой-то марки</h3>
+                                <img src="img/избранное.png" alt="избранное">
+                            </div>
+                            <p>Арт. 42342347</p>
+                            <p>Производитель: <span>KOLBINS</span></p>
+                            <p class= "new-price">152 810 Р <span class= "old-price">432 810 Р</span></p>
+                        </div>
+                    </div> 
+                </a>        
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                <a href="#" class = "product">
+                    <div class="wrapper">
+                        <div class="cover-art">
+                            <div class = "product-availability">
+                                <p>в наличии</p>
+                            </div>
+                            <img src="img/стул-товар.png" alt="">
+                        </div>
+                        <div class="cover-text">
+                            <div>
+                                <h3> Стул такой-то марки</h3>
+                                <img src="img/избранное.png" alt="избранное">
+                            </div>
+                            <p>Арт. 42342347</p>
+                            <p>Производитель: <span>KOLBINS</span></p>
+                            <p class= "new-price">152 810 Р <span class= "old-price">432 810 Р</span></p>
+                        </div>
+                    </div> 
+                </a>        
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                <a href="#" class = "product">
+                    <div class="wrapper">
+                        <div class="cover-art">
+                            <div class = "product-availability">
+                                <p>в наличии</p>
+                            </div>
+                            <img src="img/стул-товар.png" alt="">
+                        </div>
+                        <div class="cover-text">
+                            <div>
+                                <h3> Стул такой-то марки</h3>
+                                <img src="img/избранное.png" alt="избранное">
+                            </div>
+                            <p>Арт. 42342347</p>
+                            <p>Производитель: <span>KOLBINS</span></p>
+                            <p class= "new-price">152 810 Р <span class= "old-price">432 810 Р</span></p>
+                        </div>
+                    </div>
+                </a>        
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                <a href="#" class = "product">
+                    <div class="wrapper">
+                        <div class="cover-art">
+                            <div class = "product-availability">
+                                <p>в наличии</p>
+                            </div>
+                            <img src="img/стул-товар.png" alt="">
+                        </div>
+                        <div class="cover-text">
+                            <div>
+                                <h3> Стул такой-то марки</h3>
+                                <img src="img/избранное.png" alt="избранное">
+                            </div>
+                            <p>Арт. 42342347</p>
+                            <p>Производитель: <span>KOLBINS</span></p>
+                            <p class= "new-price">152 810 Р <span class= "old-price">432 810 Р</span></p>
+                        </div>
+                    </div>
+                </a>      
+            </div>
+        </div>   
+    </div>
+    </div>
+</div>
+
+<div class="details">
+    <div class="details-line">
+        <div class="details-block fst detailes-grey-bg" >
+            <h1>Стулья, кресла,<br> диваны</h1>
+            <p>Авторский дизайн, большой <br>
+            ассортимент и многообразие <br>
+            цветовой гаммы в сочетании с <br>
+            отличным качеством.</p>
+            <img src="img/кресло подробнее.png" alt="">
+            <button>подробнее</button>
+        </div>
+        <div  class="details-block scnd">
+            <h1>Стулья, кресла,<br> диваны</h1>
+            <p>Авторский дизайн, большой <br>
+            ассортимент и многообразие <br>
+            цветовой гаммы в сочетании с <br>
+            отличным качеством.</p>
+            <img src="img/кресло подробнее.png" alt="">
+            <button>подробнее</button>
+        </div>
+    </div>
+    <div class="details-line">
+        <div class="details-block fst">
+            <h1>Стулья, кресла,<br> диваны</h1>
+            <p>Авторский дизайн, большой <br>
+            ассортимент и многообразие <br>
+            цветовой гаммы в сочетании с <br>
+            отличным качеством.</p>
+            <img src="img/кресло подробнее.png" alt="">
+            <button>подробнее</button>
+        </div>
+        <div  class="details-block scnd detailes-grey-bg">
+            <h1>Стулья, кресла,<br> диваны</h1>
+            <p>Авторский дизайн, большой <br>
+            ассортимент и многообразие <br>
+            цветовой гаммы в сочетании с <br>
+            отличным качеством.</p>
+            <img src="img/кресло подробнее.png" alt="">
+            <button>подробнее</button>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="about">
+        <p>о компании riter</p>
+        <h1>дизайнерская мебель в<br>интернет магазине ритер</h1>
+        <img src="img/Эллпис.png" alt="Эллпис">
+        <div class="row">
+            <div class="col-lg-4 col-lg-offset-2">
+                <div class="text">
+                    <p class = "article">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Accusantium perspiciatis illum aliquid fuga corrupti doloribus, pariatur, 
+                        nesciunt dolorum sed accusantium.</p>
+                        <h2>Заголовок со смыслом и значением</h2>
+                        <p class = "article">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Accusantium perspiciatis illum aliquid fuga corrupti doloribus, pariatur, 
+                            repudiandae dolorem nostrum nisi temporibus, quas eaque. Sit itaque error 
+                            nesciunt dolorum sed accusantium.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="text">
+                    <p class = "article">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                         Officia veniam amet voluptatibus excepturi maiores unde vitae cumque, eum 
+                         olor nam veritatis omnis inventore nemo, numquam sed ducimus ea. 
+                         Repudiandae, hic. Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                         Odio pariatur dicta soluta animi ad in nemo at dolore architecto corporis 
+                         magnam, consectetur debitis dignissimos repellat quasi, laudantium temporibus 
+                         impedit iure? Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                         Ipsa minus commodi atque magni, provident rem, sequi quae non sed, placeat 
+                         est repudiandae fugit dolorum optio adipisci nostrum architecto voluptas corporis!</p>
+                         <a href="#"> 
+                             <p>Подробнее о компании </p>
+                             
+                        </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="brands">
+        <h1>Наши бренды</h1>
+        <div class="row">
+            <div class="col-lg-2">
+                <img src="img/бренд.png" alt="бренд">
+                <img src="img/бренд.png" alt="бренд">
+                <img src="img/бренд.png" alt="бренд">
+                <img src="img/бренд.png" alt="бренд">
+                <img src="img/бренд.png" alt="бренд">                
+            </div>
+            <div class="col-lg-2">
+                <img src="img/бренд.png" alt="бренд">
+                <img src="img/бренд.png" alt="бренд">
+                <img src="img/бренд.png" alt="бренд">
+                <img src="img/бренд.png" alt="бренд">
+                <img src="img/бренд.png" alt="бренд">
+            </div>
+            <div class="col-lg-2">
+                <img src="img/бренд.png" alt="бренд">
+                <img src="img/бренд.png" alt="бренд">
+                <img src="img/бренд.png" alt="бренд">
+                <img src="img/бренд.png" alt="бренд">
+                <img src="img/бренд.png" alt="бренд">
+            </div>
+            <div class="col-lg-2">
+                <img src="img/бренд.png" alt="бренд">
+                <img src="img/бренд.png" alt="бренд">
+                <img src="img/бренд.png" alt="бренд">
+                <img src="img/бренд.png" alt="бренд">
+                <img src="img/бренд.png" alt="бренд">
+            </div>
+            <div class="col-lg-2">
+                <img src="img/бренд.png" alt="бренд">
+                <img src="img/бренд.png" alt="бренд">
+                <img src="img/бренд.png" alt="бренд">
+                <img src="img/бренд.png" alt="бренд">
+                <img src="img/бренд.png" alt="бренд">
+            </div>
+            <div class="col-lg-2">
+                <img src="img/бренд.png" alt="бренд">
+                <img src="img/бренд.png" alt="бренд">
+                <img src="img/бренд.png" alt="бренд">
+                <img src="img/бренд.png" alt="бренд">
+                <img src="img/бренд.png" alt="бренд">
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- подвал -->
 <div class="footer-bg">
     <div class="container">
+        <footer>
         <!-- первая строка подвала -->
         <div class="row">
             <div class="footer-fst-line footer">
                 <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
                     <h1>мебель</h1>
-                    <p  >диваны</p>
-                    <p>кровати</p>
-                    <p>кровати</p>
-                    <p>кресла</p>
-                    <p>консоли</p>
+                    <a href="#">диваны</a>
+                    <a href="#">кровати</a>
+                    <a href="#">кровати</a>
+                    <a href="#">кресла</a>
+                    <a href="#">консоли</a>
                 </div>
                 <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
                     <h1>свет</h1>
-                    <p  >люстры</p>
-                    <p>бра</p>
-                    <p>торшеры</p>
-                    <p>лампы</p>
-                    <p>подсветка картин</p>
+                    <a href="#">люстры</a>
+                    <a href="#">бра</a>
+                    <a href="#">торшеры</a>
+                    <a href="#">лампы</a>
+                    <a href="#">подсветка картин</a>
                 </div>
                 <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
                     <h1>декор</h1>
-                    <p >зеркала</p>
-                    <p >статуэтки</p>
-                    <p>картины</p>
-                    <p>ковры</p>
+                    <a href="#">зеркала</a>
+                    <a href="#">статуэтки</a>
+                    <a href="#">картины</a>
+                    <a href="#">ковры</a>
                 </div>
                 <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
                     <h1>компания</h1>
-                    <p >о компании</p>
-                    <p>шоурумы</p>
-                    <p>доставка и оплата</p>
-                    <p>оплата</p>
-                    <p>дизайнерам и партнерам</p>
+                    <a href="#">о компании</a>
+                    <a href="#">шоурумы</a>
+                    <a href="#">доставка и оплата</a>
+                    <a href="#">оплата</a>
+                    <a href="#">дизайнерам и партнерам</a>
                 </div>
                 <!-- форма обратной связи -->
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                     <div class="footer-form">
                         <h1 class = "form-header">подпишитесь</h1>
-                        <input type="text" placeholder="example@email.ru">
+                        <input dir="rtl type="text" placeholder="example@email.ru">
                         <img class = "picture-on-form"src="../src/img/кнопка формы.png" alt="">
                         <div class="band"></div>
                         <div class="form-pic">
-                            <img class = "instagram" src="../src/img/instagram-logo.png" alt="">
+                        <a href="#">
+                            <img  class = "instagram" src="../src/img/instagram-logo.png" alt="">
+                        </a>
+                        <a href="#">
                             <img class = "facebook" src="../src/img/facebook-logo.png" alt="">
+                        </a>
                         </div>
                     </div>
                 </div>
@@ -216,13 +582,13 @@
             <div class="footer-scnd-line footer">
                 <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
                     <h1>Новости</h1>
-                    <p  >новости</p>
-                    <p>блог</p>
+                    <a href="#">новости</a>
+                    <a href="#">блог</a>
                 </div>
                 <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
                     <h1>другое</h1>
-                    <p  >другой раздел</p>
-                    <p>еще какой-то раздел</p>
+                    <a href="#">другой раздел</a>
+                    <a href="#">еще какой-то раздел</a>
                 </div>
             </div>
         </div>
@@ -234,7 +600,11 @@
                 <p>Политика конфиденциальности</p>
             </div>
         </div>
+    </footer>
     </div>
 </div>
+
+<script src = "js/app.js">
+</script>
 </body>
 </html>

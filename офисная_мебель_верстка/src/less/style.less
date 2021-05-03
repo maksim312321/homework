@@ -20,6 +20,13 @@
 	font-family: 'Futura_New';
 	src: url('../fonts/FuturaNewBook.eot');
 	src: local('☺'), url('../fonts/FuturaNewBook.woff') format('woff'), url('../fonts/FuturaNewBook.ttf') format('truetype'), url('../fonts/FuturaNewBook.svg') format('svg');
+	font-weight:500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Futura_New_Medium';
+	src: url('../fonts/FuturaNewDemi.eot');
+	src: local('☺'), url('../fonts/FuturaNewDemi.woff') format('woff'), url('../fonts/FuturaNewDemi.ttf') format('truetype'), url('../fonts/FuturaNewDemi.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -28,6 +35,14 @@ body{
     a:hover{
         opacity: 70%;
         transition: 0.2s;
+    }
+    h1{
+        margin-top: 30px;
+        text-transform: uppercase;
+        font-family: Gotham_Pro_Medium;
+        font-size: 37px;
+        line-height: 42px;
+        margin-bottom: 38px;
     }
 }
 .container{
@@ -45,6 +60,7 @@ body{
 //навигация
 .navigation{
     // бэкгроунд навигации
+    height: 40px;
     &-bg{
     position: absolute;
     background-color: black;
@@ -52,12 +68,10 @@ body{
     width: 100%;
     z-index: -1;
     }
-
     // для всех ссылок
     a{
         font-size: 10px;
         line-height: 11px;
-
         letter-spacing: 0.1em;
         text-transform: uppercase;
         color:white;
@@ -76,228 +90,384 @@ body{
     &-more{
         display: inline-block;
         position: relative;
-        margin-left: 406px;
+        margin-left: 390px;
         .name-menu{
-            display: inline-block;  
-            transform: translateX(-10px);
+            display: inline-block; 
+            padding-right: 10px;
         }
         .btn-menu{
             display: inline-block;  
-            transform: translateY(-1px);
+            
         }
     }
 }
 //информация в шапке
 .header-info{
-    margin-top: 11px;
-    height: 108px;
-    font-family: Gotham_Pro_Medium; 
-    p{
-        color:black;
-        opacity: 50%;
-        display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 105px;
+    .lighter{
+        font-family: Gotham_Pro_Medium;
         font-size: 10px;
+        line-height: 10px;
+        color: #000000;
+        opacity: 0.5;
     }
-    a{
-        text-decoration: none;
-        color: black;
-        white-space: nowrap; 
+    .darker{
+        font-family: Gotham_Pro_Medium;
         font-size: 15px;
+        line-height: 10px;
+        color: #000000;
+    }
+    .header-info-element{
+        display: inline-block;
+        width: 200px;
+        margin-right: 8px;
+    }
+    .wrapper1, .wrapper2{
         display: inline-block;
     }
-}
-.info-pic{
-    margin-top: 43px;
-}
-.mobile{
-    .info-pic{
+    .wrapper1{
+        img{
+            float: left;
+            padding: 10px;
+        }
+        p{
+            text-align: left;
+        }
+    }
+    .wrapper2{
+        p{
+            text-align: right;
+        }
+        img{
+            padding-left: 10px;
+            float: right;
+        }
+
+    }
+    .logo{
         display: inline-block;
-        position: relative;
-    }
-    p{
-        margin-left: 7px;
-        transform: translateY(13px);
-        text-transform: uppercase;
-    }
-    a{
-        margin-left: 32px;
-        transform: translateY(-16px);  
-    }
-}
-.mail{
-    .convert{
-        position: absolute;
-        margin-top: 46px;
-        margin-left: 18px;
-        &-elemnt{
-            position: relative;
-            transform: translate(18px, 4px);
-        }
-        }
-    p{
-        transform: translate(25px, 19px);
-    }
-    a{
-        transform: translate(52px, -5px);
-    }
-}
-.logo{
-    &-bg{
-        position: absolute;
-        background-color:#F3F3F3;
+        margin: 0 40px;
         width: 199px;
         height: 105px;
-        margin-left: 80px;
-    }
-    img{
-        margin-left: 97px;
-        transform: translateY(-26px);
-    }
-}
-.admin{
-    .info-pic{
-        position: absolute;
-        right: 0;
-        transform: translate(13px,1px);
-    }
-    p{
-        transform: translate(75px, 36px);
-    }
-    a{
-        transform: translate(15px, 21px);
-    }
-}
-.cart{
-    .info-pic{
-        position: absolute;
-        right: 14px;
-        margin-top: 44px;
-        &-black{
-            transform: translate(140px, 21px);
-            position: relative;
-            width: 26px;
-            height: 17px;
-            background-color: black;
-            border-radius: 4px;
-            &-triangle{
-                position: absolute;
-                width: 7px;
-                height: 6px;
-                background-color: black;
-                transform: translate(10px, 13px) rotate(45deg);
-            }
-            &-num{
-                display: block;
-                font-size: 11px;
-                position: absolute;
-                color:white;
-                right: 10px;
-                top: 2px;
-            }
+        background-color: #F3F3F3;
+        a{
+            display: block;
+            margin-top: 10px;
         }
-    }
-    p{
-        transform: translate(33px, 19px);
-    }
-    a{
-        transform: translate(46px, 4px);
     }
 }
 // разграничивающая линия
 .line{
-    transform: translateY(-4px);
-    width: 100%;
-    height: 1px;
-    background-color: #EAEBED;
-
+position: absolute;
+width: 100%;
+height: 1px;
+background: rgba(234, 235, 237, 0.6);
 }
+
 //меню шапки
 .header-menu{
-    a:hover{
-        text-decoration: none;
-        opacity: 70%;
-        transition: 0.2s;
-    }
-    transform: translateY(-4px);
-    width: 100%;
-    height: 108px;
-}
-.foropacity{
-    opacity: 30%;
+    font-family: Gotham_Pro_Medium;
+    margin-top: 19px;
+    margin-left: 27px;
+    margin-bottom: 19px;
 }
 .menu-icon{
-    margin-top: 22px;
-    margin-left: 14px;
-    margin-right: 52px;
-    display:inline-block;
+    .icon{
+        div{
+            width: 100px;
+        }
+        div:hover{
+            opacity: 70%;
+            transition: 0.2s;
+        }
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    display: inline-block;
     img{
         display: block;
-        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
     }
+    margin-right: 24px;
     span{
         display: block;
-        margin-top: 10px;
-        font-family: Gotham_Pro_Medium; 
-        color:black;
+        text-align: center;
+        padding-top: 11px;
         font-size: 11.3023px;
-        text-transform: uppercase;
+        line-height: 13px;
+        text-align: center;
         letter-spacing: 0.1em;
-    };
-}
-.armchair{
-    span{
-        transform: translateX(-11px);
+        color: black;
+        text-transform: uppercase;
     }
-}
-.lamp{
-    transform: translateX(18px);
-    span{
-        transform: translateX(-38px);
+    p{
+        display: inline;
+        position: absolute;
+
     }
-}
-.sofa{
-    transform: translateX(-24px);
-    span{
-        transform: translateX(-4px);
-    }
-}
-.table{
-    transform: translateX(-29px);
-    width: 50px;
-    span{
-        transform: translateX(-5px);
-    }
-}
-.chair{
-    transform: translateX(-6px);
-    span{
-        transform: translateX(-10px);
-    }
-}
-.pouf{
-    transform: translateX(11px);
-    span{
-        transform: translateX(-2px);
-    }
-}
-.dekor{
-    transform: translateX(17px);
-    span{
-        transform: translateX(-4px);
-    }
-}
-.bench{
-    transform: translate(38px, -1px);
 }
 .more{
-    transform: translateX(55px);
-    span{
-        p{
+    position: absolute;
+}
+
+// преимущества
+.advantages{
+    margin-top: 30px;
+}
+.adv{
+    img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+    h3{
+        display: block;
+        font-family: Gotham_Pro_Medium;
+        font-size: 16px;
+        line-height: 18px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #000000;
+        margin-bottom: 23px;
+    }
+    p{
+        font-family: Futura_New;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: #000000;
+        opacity: 0.4;
+    }
+}
+
+//товары
+.all-products{
+    margin-top: 20px;
+    margin-bottom: 88px;
+}
+.products{
+    .product{
+        text-decoration: none;
+    }
+    .product:hover{
+        .wrapper{
+            opacity: 70%;
+            transition: 0.5s;
+        }
+    
+    }
+    margin-top: 40px;
+    .wrapper{
+        height: 410px;
+        .cover-art{
+            .product-availability{
+                position: absolute;
+                background-color: #000;
+                width: 85px;
+                height: 15px;
+                p{
+                    font-family: Futura_New;
+                    color:white;
+                    font-size: 10px;
+                    line-height: 15px;
+                    text-align: center;
+                    letter-spacing: 0.2em;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        .cover-text{
+            div{
+            h3{
+                width: 200px;
+                display: inline-block;
+                font-family: Futura_New_Medium;
+                font-size: 17px;
+                color:black;
+                letter-spacing: 0.2em;
+                text-transform: uppercase;       
+            }
+            img{
+                display: inline-block;
+                position: relative;
+                bottom:15px;
+            }
+            }
+            p{
+                font-family: Futura_New;
+                display: block;
+                font-size: 10px;
+
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                color: rgba(0, 0, 0, 0.5);
+                span{
+                    color: black;
+                    text-decoration: underline;
+                }
+            }
+            .new-price{
+                font-family: Futura_New_Medium;
+                font-size: 24px;
+                color:black;
+                .old-price{
+                    font-family: Futura_New_Medium;
+                    font-size: 14px;
+                    color: grey;
+                    text-decoration: line-through;
+                }
+            }
+        }
+    }
+}
+
+//подробности
+.details{
+    margin-bottom: 100px;
+    .details-line{
+        margin-bottom: 5px;
+        .detailes-grey-bg{
+            background-color: #F3F3F3;
+        }
+        .details-block{
             display: inline-block;
-            position: absolute;
-            font-size: 9px;
-            transform: translate(4px, 2px);
-        }  
+            width: 685px;
+            height: 440px;
+            h1{
+                color: black;
+                text-transform: uppercase;
+                font-size: 32px;
+                margin-left: 51px;
+                margin-top: 46px;
+                font-family: Gotham_Pro_Medium;
+            }
+            p{
+                display: block;
+                margin-left: 50px;
+                margin-top: 30px;
+                font-family: Gotham_Pro;
+                font-size: 15px;
+                line-height: 20px;
+                color: #000000;
+                opacity: 0.5;
+            }
+
+            button{
+                position: relative;
+                left: 50px;
+                top: 115px;
+                border: none;
+                font-family: Gotham_Pro;
+                text-align: center;
+                color:white;
+                line-height: 12px;
+                text-transform: uppercase;
+                font-size: 13px;
+                height: 40px;
+                width: 129px;
+                background: linear-gradient(93.8deg, #807FD4 0%, #609CE2 0.01%, #2346FF 100%);
+                box-shadow: 0px 5px 12px rgba(71, 120, 239, 0.6);
+                border-radius: 4px;
+            }
+            button:active{
+                border: none;
+                background-color: red;
+            }
+            img{
+                position: absolute;
+                top:0;
+                right: 0;
+            }
+        }
+        .fst{
+            position: relative;
+            left: 50%;
+            margin-left: -690px;
+        }
+        .scnd{
+            position: relative;
+            left: 50%;
+        }
+        
+    }
+}
+
+.about{
+    img{
+        display: block;
+        margin: -150px auto;
+        z-index: -1;
+        position: absolute;
+    }
+
+    margin-top: 50px;
+    color:black;
+    text-align: center;
+    font-family: Gotham_Pro_Medium;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    h1{
+        margin-top: 30px;
+        font-family: Gotham_Pro_Medium;
+        font-size: 37px;
+        line-height: 42px;
+        margin-bottom: 38px;
+    }
+    h2{
+        text-align: left;
+        font-family: Futura_New_Medium;
+        font-size: 20px;
+        line-height: 21px;
+    }
+    .article{
+        text-align: left;
+        font-family: Gotham_Pro;
+        text-transform: none;
+        font-size: 16px;
+        line-height: 29px;
+        margin-bottom: 38px;
+    }
+    a{
+        &:hover{
+            text-decoration: none;
+            opacity: 70%;
+            transition: 0.2s;
+        }
+        p{
+            position: relative;
+            left: 0;
+            font-family: Gotham_Pro_Medium;
+            color:black;
+            font-size: 15px;
+            line-height: 23px;
+        }
+    }
+
+}
+.brands{
+    margin-top: 109px;
+    h1{
+        text-align: center;
+        color:black;
+        font-family: Gotham_Pro_Medium;
+        font-size: 37px;
+        line-height: 52px;
+    }
+    .row{
+        margin-top: 47px;
+        margin-bottom: 50px;
+        img{
+            margin-bottom: 35px;
+        }
     }
 }
 // подвал
@@ -307,7 +477,7 @@ body{
     background-color: black;
 }
 
-.footer{
+footer{
     font-family: Futura_New;
     h1{
         font-family: Futura_New;
@@ -320,7 +490,7 @@ body{
         margin-bottom: 18px;
     }
 
-    p{
+    a{
         font-size: 10px;
         white-space: nowrap; 
         letter-spacing: 0.2em;
@@ -328,6 +498,12 @@ body{
         text-transform: uppercase;
         color:white;
         margin-bottom: 6px;
+        &:hover{
+            color:white;
+            text-decoration: none;
+            transition: 0.2s;
+            opacity: 70%;
+        }
     }
 }
 .footer-fst-line{
@@ -347,10 +523,14 @@ body{
         transform: translateX(59px);
     }
     input{
+        outline: none;
         &::placeholder{
             color:white;
             text-align-last: left;
             transform: translateX(-2px);
+        }
+        &:focus{
+            border:none;
         }
         opacity: 70%;
         color:white;
@@ -360,11 +540,11 @@ body{
         font-family: Futura_New;
         font-size: 18px;
         background-color: black;
-        text-align: right;
+        text-align: left;
         width: 257px;
         border:none;
         transform: translateX(-14px);
-        // border-bottom: solid 3px white;
+
     }
     .picture-on-form{
         position: absolute;
@@ -377,10 +557,11 @@ body{
         background-color: white;
     }
     .form-pic{
-        display: inline-block;
-        transform: translate(192px, 29px);
-        .facebook{
-            transform: translateX(7px);
+        a{
+            margin-top: 10px;
+            display: inline-block;
+            position: relative;
+            left: 200px;
         }
     }
 }
@@ -402,175 +583,7 @@ body{
 
 // брейкпоинты
 @media (max-width: 1280px){
-.container{
-    width: 740px;
-    padding: 0;
-    .navigation-menu{
-        margin-top: 23px;
-    }
-    .navigation-more{
-        display: none;
-    }
-    .logo{
-        margin-top: 16px;
-    }
-    .header-info{
-        .mobile{
-            .info-pic{
-                display: inline-block;
-                position: relative;
-            }
-            p{
-                margin-left: 7px;
-                transform: translate(18px, -27px);
-                white-space: nowrap; 
-                text-transform: uppercase;
-            }
-            a{
-                font-size: 12px;
-                margin-left: 19px;
-                transform: translateY(-40px);  
-            }
-        }
-        .mail{
-            margin-top: 30px;
-            transform: translateX(-147px);
-            .convert{
-                position: absolute;
-                margin-top: 46px;
-                margin-left: 18px;
-                &-elemnt{
-                    position: relative;
-                    transform: translate(18px, 4px);
-                }
-                }
-            p{
-                transform: translate(50px, -13px);
-            }
-            a{
-                transform: translate(50px, -25px);
-            }
-        }
-        .admin{
-            margin-top: 30px;
-            .info-pic{
-                position: absolute;
-                right: 0;
-                transform: translate(129px,1px);
-            }
-            p{
-                transform: translate(120px, 36px);
-            }
-            a{
-                transform: translate(60px, 21px);
-            }
-        }
-        .cart{
-            .info-pic{
-                position: absolute;
-                right: 0px;
-                margin-top: 44px;
-                &-black{
-                    display: none;
-                    transform: translate(140px, 21px);
-                    position: relative;
-                    width: 26px;
-                    height: 17px;
-                    background-color: black;
-                    border-radius: 4px;
-                    &-triangle{
-                        position: absolute;
-                        width: 7px;
-                        height: 6px;
-                        background-color: black;
-                        transform: translate(10px, 13px) rotate(45deg);
-                    }
-                    &-num{
-                        display: block;
-                        font-size: 11px;
-                        position: absolute;
-                        color:white;
-                        right: 10px;
-                        top: 2px;
-                    }
-                }
-            }
-            p{
-                transform: translate(-15px, 39px);
-            }
-            a{
-                transform: translate(-6px, 24px);
-            }
-        }
-    }
-    .header-menu{
-        .pouf, .dekor, .bench{
-            display: none;
-        }
-        .more{
-            transform: translate(700px, -108px);
-            span{
-                p{
-                    display: inline-block;
-                    position: absolute;
-                    font-size: 9px;
-                    transform: translate(4px, 2px);
-                }  
-            }
-        }
-        .more{
-
-        }
-    }
-    .footer-form{
-        margin-top: 170px;
-    }
-}
-.navigation-bg{
-    position: absolute;
-    background-color: black;
-    height: 70px;
-    width: 100%;
-    z-index: -1;
-}
 }
 @media (max-width: 768px){
-    .container{
-        width: 90%;
-        padding: 0;
-        .header-info{
-            .mobile, .mail{
-                display: none;
-            }
-            .logo, .admin, .cart{
-                transform: translate(-337px , -20px);
-            }
-            .admin, .cart{
-                transform: translate(-151px, -15px);
-            .info-pic{
-                display: none;
-            }
-            white-space: nowrap;
-            }
-            .cart{
-                a{
-                    transform: translateY(41px)
-                }
-            }
-            .admin{
-                a{
-                    transform: translateY(55px)
-                }
-            }
-        }
-        .header-menu{
-            display: none;
-        }
-        .footer-scnd-line{
-            display: none;
-        }
-        .privacy{
-            transform: translate(-147px , 12px);
-        }
-    }
+   
 }
