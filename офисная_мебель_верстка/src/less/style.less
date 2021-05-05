@@ -74,6 +74,10 @@ body{
         background: linear-gradient(93.8deg, #807FD4 0%, #609CE2 0.01%, #2346FF 100%);
         box-shadow: 0px 5px 12px rgba(71, 120, 239, 0.6);
         border-radius: 4px;
+        &:hover{
+            opacity: 0.7;
+            transition: 0.2s;
+        }
     }
     button:active{
         border: none;
@@ -541,6 +545,12 @@ background: rgba(234, 235, 237, 0.6);
     }
     margin-bottom: 80px;
 }
+.wrapper-feedback{
+    background-color: #F7F7F7;
+    max-width: 2500px;
+    margin-right: auto;
+    margin-left: auto;
+}
 .feedback{
     height: 633px;
     width: 100%;
@@ -583,11 +593,12 @@ background: rgba(234, 235, 237, 0.6);
     }
     
     .feedback-blog{
+        display: inline-block;
+        margin-right: 50px;
         .bloger{
             display: inline-block;
             position: relative;
             right: 30px;
-
         }
         .bloger-avatar{
             position: relative;
@@ -618,14 +629,50 @@ background: rgba(234, 235, 237, 0.6);
                 opacity: 0.5;
             }
         }
+        .bloger-wrapper{
+            height: 170px;
+        }
         .bloger-review{
             width: 455px;
             height: 155px;
-            background: red;
             box-shadow: -10px 14px 60px rgba(0, 0, 0, 0.07);
             border-radius: 0 50px 50px 50px;
+            background-color: #fff;
+            p{
+                font-family: Futura_New;
+                font-size: 16px;
+                line-height: 23px;
+                padding: 30px;
+                color:black;
+            }
         }
     }
+    .feedback-blog-opacity{
+        opacity: 0.5;
+    }
+}
+.wrapper-subsribe{
+    background-image: url(../img/фон\ подписки.png);
+    height: 253px;
+    width: 1556px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.subscribe{
+    background: #FFFFFF;
+    box-shadow: -20px 4px 54px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    height: 100px;
+    width: 419px;
+    margin-top: 77px;
+    margin-bottom: 77px;
+    .sub-tag{
+        display: inline-block;
+    }
+    button{
+        margin-left: 100px;
+    }
+    
 }
 // подвал
 .footer-bg{

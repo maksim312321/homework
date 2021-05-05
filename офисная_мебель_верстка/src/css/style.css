@@ -70,6 +70,10 @@ body button {
   box-shadow: 0px 5px 12px rgba(71, 120, 239, 0.6);
   border-radius: 4px;
 }
+body button:hover {
+  opacity: 0.7;
+  transition: 0.2s;
+}
 body button:active {
   border: none;
   background-color: red;
@@ -488,6 +492,12 @@ body button:active {
 .brands .row img {
   margin-bottom: 35px;
 }
+.wrapper-feedback {
+  background-color: #F7F7F7;
+  max-width: 2500px;
+  margin-right: auto;
+  margin-left: auto;
+}
 .feedback {
   height: 633px;
   width: 100%;
@@ -530,6 +540,10 @@ body button:active {
 .feedback .feedback-headline {
   display: inline-block;
 }
+.feedback .feedback-blog {
+  display: inline-block;
+  margin-right: 50px;
+}
 .feedback .feedback-blog .bloger {
   display: inline-block;
   position: relative;
@@ -564,12 +578,47 @@ body button:active {
   color: #000000;
   opacity: 0.5;
 }
+.feedback .feedback-blog .bloger-wrapper {
+  height: 170px;
+}
 .feedback .feedback-blog .bloger-review {
   width: 455px;
   height: 155px;
-  background: red;
   box-shadow: -10px 14px 60px rgba(0, 0, 0, 0.07);
   border-radius: 0 50px 50px 50px;
+  background-color: #fff;
+}
+.feedback .feedback-blog .bloger-review p {
+  font-family: Futura_New;
+  font-size: 16px;
+  line-height: 23px;
+  padding: 30px;
+  color: black;
+}
+.feedback .feedback-blog-opacity {
+  opacity: 0.5;
+}
+.wrapper-subsribe {
+  background-image: url(../img/фон\ подписки.png);
+  height: 253px;
+  width: 1556px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.subscribe {
+  background: #FFFFFF;
+  box-shadow: -20px 4px 54px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  height: 100px;
+  width: 419px;
+  margin-top: 77px;
+  margin-bottom: 77px;
+}
+.subscribe .sub-tag {
+  display: inline-block;
+}
+.subscribe button {
+  margin-left: 100px;
 }
 .footer-bg {
   height: 480px;

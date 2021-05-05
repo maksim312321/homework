@@ -1,11 +1,17 @@
 let list = document.querySelectorAll("div");
 
+let game = document.getElementById("game");
+let gameField = document.getElementById("game-field");
+let player1 = document.getElementById("player1");
+let player2 = document.getElementById("player2");
+let gameRegistration = document.getElementById("game-registration");
+
 //инициализация
-let game = list[0];
-let gameField = list[1];
-let player1 = list[2];
-let player2 = list[3];
-let gameRegistration = list[4];
+// let game = list[0];
+// let gameField = list[1];
+// let player1 = list[2];
+// let player2 = list[3];
+// let gameRegistration = list[4];
 
 //стартовая позиция (X-координата, P1 или P2 обозначение игрока)
 let locationXP1 = 0;
@@ -83,12 +89,19 @@ function showGameRegistration(){
 }
 
 //ф-я определяющая пересек ли игрок границу игрового поля
-function СrossTheBorder (location, size){
+function СrossTheBorder (location, size, redWinFlag){
     if((Number(location)+Number(size)) > 800 || (location < 0)){
+        if(redWinFlag == true){
+            alert("Выйграл первый игрок");   
+        }
+        else{
+            alert("Выйграл второй игрок");    
+        }   
         showGameRegistration();
     }
 }
 
+// let redWinFlag = false;//выйграл ли красный
 let flagX = false;//пересекли ли игроки друг друга по X
 let flagY = false;//пересекли ли игроки друг друга по Y
 
@@ -98,6 +111,7 @@ function СrossThePlayerX (locationP1, sizeP1, locationP2, sizeP2){
     if( (Number(locationP1)+Number(sizeP1) >= Number(locationP2)) && (Number(locationP2) + Number(sizeP2) > Number(locationP1))){
         flagX = true; //пересекли
         if(flagY == true){ // если есть пересечение по Y, то выходим в меню
+        alert("Выйграл первый игрок");  
         showGameRegistration();
         }
     }
@@ -111,6 +125,7 @@ function СrossThePlayerY (locationP1, sizeP1, locationP2, sizeP2){
     if( (Number(locationP1)+Number(sizeP1) >= Number(locationP2)) && (Number(locationP2) + Number(sizeP2) > Number(locationP1)) ){
         flagY = true;
         if(flagX == true){
+        alert("Выйграл первый игрок");  
         showGameRegistration();
         }
     }
@@ -131,7 +146,7 @@ function moveP1(event){
     setTimeout(()=>clearInterval(idMove),10);
     // console.log(locationYP1);
     СrossThePlayerY (locationYP1, p1Size.value, locationYP2, p2Size.value )
-    СrossTheBorder (locationYP1, p1Size.value);
+    СrossTheBorder (locationYP1, p1Size.value, false);
 }
 //вниз
 if(event.keyCode == 83){
@@ -142,7 +157,7 @@ if(event.keyCode == 83){
     // console.log(locationYP1);
     setTimeout(()=>clearInterval(idMove),10);
     СrossThePlayerY (locationYP1, p1Size.value, locationYP2, p2Size.value )
-    СrossTheBorder (locationYP1, p1Size.value);
+    СrossTheBorder (locationYP1, p1Size.value, false);
 }
 //влево
 if(event.keyCode == 65){
@@ -152,7 +167,7 @@ if(event.keyCode == 65){
     locationXP1-=speedP1;
     setTimeout(()=>clearInterval(idMove),10);
     СrossThePlayerX (locationXP1, p1Size.value, locationXP2, p2Size.value )
-    СrossTheBorder(locationXP1, p1Size.value);
+    СrossTheBorder(locationXP1, p1Size.value, false);
 }
 //вправо
 if(event.keyCode == 68){
@@ -162,7 +177,7 @@ if(event.keyCode == 68){
     locationXP1+=speedP1;
     setTimeout(()=>clearInterval(idMove),10);
     СrossThePlayerX (locationXP1, p1Size.value, locationXP2, p2Size.value )
-    СrossTheBorder(locationXP1, p1Size.value);
+    СrossTheBorder(locationXP1, p1Size.value, false);
 }
 }
 function moveP2(event){
@@ -173,7 +188,7 @@ function moveP2(event){
     }, 10);
     locationYP2-=speedP2;
     setTimeout(()=>clearInterval(idMove),10);
-    СrossTheBorder(locationYP2, p2Size.value);
+    СrossTheBorder(locationYP2, p2Size.value, true );
 }
 //вниз
 if(event.keyCode == 40){
@@ -182,7 +197,7 @@ if(event.keyCode == 40){
     }, 10);
     locationYP2+=speedP2;
     setTimeout(()=>clearInterval(idMove),10);
-    СrossTheBorder(locationYP2, p2Size.value);
+    СrossTheBorder(locationYP2, p2Size.value, true);
 }
 //влево
 if(event.keyCode == 37){
@@ -191,7 +206,7 @@ if(event.keyCode == 37){
     }, 10);
     locationXP2-=speedP2;
     setTimeout(()=>clearInterval(idMove),10);
-    СrossTheBorder(locationXP2, p2Size.value);
+    СrossTheBorder(locationXP2, p2Size.value, true);
 }
 //вправо
 if(event.keyCode == 39){
@@ -200,7 +215,7 @@ if(event.keyCode == 39){
     }, 10);
     locationXP2+=speedP2;
     setTimeout(()=>clearInterval(idMove),10);
-    СrossTheBorder(locationXP2, p2Size.value);
+    СrossTheBorder(locationXP2, p2Size.value, true);
 }
 }
 

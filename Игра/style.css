@@ -3,7 +3,7 @@ h1{
     font-size: 50px;
     text-transform: uppercase;
 }
-.game-field{
+#game-field{
     position: relative;
     height: 800px;
     width: 800px;
@@ -11,14 +11,14 @@ h1{
     margin-left: auto;
     margin-right: auto;
 }
-.player1{
+#player1{
     position: absolute;
 
     width: 200px;
     height: 200px;
     background-color: red;
 }
-.player2{
+#player2{
     position: absolute;
     right: 0;
     bottom: 0;
@@ -26,7 +26,7 @@ h1{
     height: 100px;
     background-color: green;
 }
-.game-registration{
+#game-registration{
     position: relative;
     height: 700px;
     width: 800px;
