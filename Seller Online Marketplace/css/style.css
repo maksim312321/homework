@@ -1,0 +1,69 @@
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_c5H7g4.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_epG7g4.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmWUlvAw.ttf) format('truetype');
+}
+button {
+  text-align: center;
+  border-radius: 15px;
+  background-color: #42b1ba;
+  border: 5px solid white;
+  color: white;
+  padding: 5px 10px;
+}
+.search {
+  font-family: Roboto;
+  font-weight: 700;
+  border-radius: 30px;
+  border: none;
+  background: url(../img/search.png) no-repeat 95% 50%;
+  background-color: #F1F1F1;
+  outline: none;
+}
+body {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 14px;
+}
+.container {
+  max-width: 1128px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  margin: 25px 0;
+  border-bottom: 1px solid #EEEEEE;
+}
+.header .header__search {
+  width: 360px;
+  height: 32px;
+}
+.header .header__cart {
+  float: right;
+}
+.header .header_login {
+  float: right;
+}

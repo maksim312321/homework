@@ -1,0 +1,53 @@
+//переменные
+@footer-bg: #232F3E;
+@banner-bg:#42B1BA;
+@headers-color: #1E273A;
+@menu-items-color:#36425B;
+//шрифты
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Roboto:wght@400;700&display=swap');
+//стили повторяющихся элементов
+button{
+    text-align: center;
+    border-radius: 15px;
+    background-color: @banner-bg;
+    border: 5px solid white;
+    color:white;
+    padding: 5px 10px;
+}
+.search{
+    font-family: Roboto;
+    font-weight: 700;
+    border-radius: 30px;
+    border:none;
+    background: url(../img/search.png) no-repeat 95% 50%;
+    background-color: #F1F1F1;
+    outline: none;
+}
+//конец повторяющихся элементов
+
+//основные стили
+body{
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 14px;
+}
+.container{
+    max-width: 1128px;
+}
+.header{
+    display: flex;
+    align-items: center;
+    margin: 25px 0;
+    border-bottom: 1px solid #EEEEEE;
+    .header__search{
+        width: 360px;
+        height: 32px;
+    }
+    .header__cart{
+        float: right;
+    }
+    .header_login{
+        float: right;
+    }
+}
+
