@@ -1,31 +1,45 @@
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 800;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_c5H7g4.ttf) format('truetype');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Roboto:wght@400;700&display=swap");
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 900;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_epG7g4.ttf) format('truetype');
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
 }
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype');
+
+body {
+  line-height: 1;
 }
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmWUlvAw.ttf) format('truetype');
+
+ol, ul {
+  list-style: none;
 }
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 .search {
   font-family: Roboto;
   font-weight: 700;
@@ -35,11 +49,14 @@
   background-color: #F1F1F1;
   outline: none;
 }
+
 .search[type=search] {
   padding-left: 10px;
 }
+
 body {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: Roboto;
   font-weight: 700;
   font-size: 14px;
@@ -55,22 +72,30 @@ body h1 {
 body .button {
   text-align: center;
   border-radius: 20px;
-  background-color: #42b1ba;
+  background-color: #42B1BA;
   border: 3px solid white;
   color: white;
   padding: 5px 10px;
-  transition: .2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 body .button:hover {
   opacity: 0.7;
-  transition: .2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
+
 .container {
   max-width: 1128px;
 }
+
 .header__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 25px 0;
   border-bottom: 1px solid #EEEEEE;
 }
@@ -85,21 +110,29 @@ body .button:hover {
   float: right;
 }
 .header__row .menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .header__row .menu__list a {
   color: #36425B;
   text-decoration: none;
-  transition: .2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 .header__row .menu__list a:hover {
-  color: #42b1ba;
-  transition: .2s;
+  color: #42B1BA;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
+
 .header__row_second {
   border: none;
 }
+
 .blog__slider {
   position: relative;
   overflow: hidden;
@@ -110,7 +143,10 @@ body .button:hover {
   border: none;
 }
 .blog__slider .slider__track {
+  -webkit-transition: 0.2s;
   transition: 0.2s;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .blog__slider .slider__prev {
@@ -121,8 +157,9 @@ body .button:hover {
   bottom: 0;
   right: 0;
 }
+
 .blog__registration {
-  background-color: #42b1ba;
+  background-color: #42B1BA;
   position: absolute;
   height: 270px;
   width: 100%;
@@ -141,11 +178,11 @@ body .button:hover {
 .blog__registration .blog__text {
   margin-left: 30px;
 }
+
 .advantages {
   margin: 40px 0px;
 }
-.advantages .advantages__img,
-.advantages .advantages__wrapper {
+.advantages .advantages__img, .advantages .advantages__wrapper {
   display: inline-block;
   vertical-align: middle;
 }
@@ -161,17 +198,21 @@ body .button:hover {
 .advantages .advantages__wrapper {
   margin-left: 10px;
 }
+
 .viewed__item {
   margin-right: 10px;
 }
+
 .viewed_img {
   text-align: center;
 }
+
 .viewed__header {
   display: inline-block;
   color: #1E273A;
   margin: none;
 }
+
 .viewed__next {
   background: initial;
   border: none;
@@ -179,13 +220,16 @@ body .button:hover {
   right: 0;
   top: 30px;
 }
+
 .reviews {
   margin-top: 30px;
 }
+
 .reviews__header {
   display: inline-block;
   color: #1E273A;
 }
+
 .reviews__next {
   background: initial;
   border: none;
@@ -193,15 +237,23 @@ body .button:hover {
   right: 0;
   top: 30px;
 }
+
 .reviews__wrapper {
   padding-right: 300px;
 }
+
 .banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 100px 0;
-  background-color: #42b1ba;
+  background-color: #42B1BA;
 }
 .banner .banner__header h1 {
   margin-left: 30px;
@@ -211,10 +263,12 @@ body .button:hover {
   width: 150px;
   margin-right: 20px;
 }
+
 .footer__bg {
-  background-color: #232f3e;
+  background-color: #232F3E;
   height: 400px;
 }
+
 .footer .footer__row_first {
   margin-top: 50px;
 }
@@ -231,9 +285,11 @@ body .button:hover {
   font-size: 14px;
   font-weight: 400;
   text-decoration: none;
-  transition: .2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 .footer a:hover {
-  color: #42b1ba;
-  transition: .2s;
+  color: #42B1BA;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }

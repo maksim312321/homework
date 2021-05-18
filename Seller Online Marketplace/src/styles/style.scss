@@ -1,10 +1,9 @@
 //переменные
-@footer-bg: #232F3E;
-@banner-bg:#42B1BA;
-@headers-color: #1E273A;
-@menu-items-color:#36425B;
+@import "commons/variables.scss";
 //шрифты
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Roboto:wght@400;700&display=swap');
+//обнуление стилей
+@import "commons/nullstyle.scss";
 //стили повторяющихся элементов
 
 .search{
@@ -38,7 +37,7 @@ body{
     .button{
         text-align: center;
         border-radius: 20px;
-        background-color: @banner-bg;
+        background-color: $banner-bg;
         border: 3px solid white;
         color:white;
         padding: 5px 10px;
@@ -53,39 +52,8 @@ body{
 .container{
     max-width: 1128px;
 }
-.header__row{
-    display: flex;
-    align-items: center;
-    padding: 25px 0;
-    border-bottom: 1px solid #EEEEEE;
-    .header__search{
-        width: 360px;
-        height: 32px;
-    }
-    .header__cart{
-        float: right;
-    }
-    .header_login{
-        float: right;
-    }
-    .menu__list{
-        // доделать
-        display: flex;
-        justify-content: space-between;
-        a{
-            color:#36425B;
-            text-decoration: none;
-            transition: .2s;
-            &:hover{
-                color:@banner-bg;
-                transition: .2s;
-            }
-        }
-    }
-}
-.header__row_second{
-    border:none;
-}
+//шапка
+@import "blocks/header.scss";
 
 .blog__slider{
     // height: 270px;
@@ -112,7 +80,7 @@ body{
     }
 }
 .blog__registration{
-    background-color: @banner-bg;
+    background-color: $banner-bg;
     position: absolute;
     height: 270px;
     width: 100%;
@@ -186,48 +154,7 @@ body{
 .reviews__wrapper{
     padding-right: 300px;
 }
-.banner{
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    margin: 100px 0;
-    background-color: @banner-bg;
-    .banner__header{
-        h1{
-            margin-left: 30px;
-        }
-    }
-    button{
-        height: 40px;
-        width: 150px;
-        margin-right: 20px;
-    }
-}
-.footer__bg{
-    background-color:@footer-bg;
-    height: 400px;
-}
-.footer{
-    .footer__row_first{
-        margin-top: 50px;
-    }
-    .footer__header{
-        color:white;
-        font-family: Montserrat;
-        font-weight: 800;
-        font-size: 18px;
-    }
-    a{
-        display: block;
-        margin-bottom: 10px;
-        color:white;
-        font-size: 14px;
-        font-weight: 400;
-        text-decoration: none;
-        transition: .2s;
-        &:hover{
-            color:@banner-bg;
-            transition: .2s;
-        }
-    }
-}
+//баннер
+@import "blocks/banner.scss";
+//футер
+@import "blocks/footer.scss";
