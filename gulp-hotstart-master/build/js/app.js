@@ -8,7 +8,6 @@ $(document).ready(function(){
     let itemWidth = 742;//ширину задал фикс, не успеваю найти адекватного способа нахождения ширины картинки
     let hasClick = false;
 
-
     function auto(){
         if(hasClick == false){
         position -= itemWidth;  

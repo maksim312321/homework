@@ -1,0 +1,12 @@
+.search{
+    font-family: Roboto;
+    font-weight: 700;
+    border-radius: 30px;
+    border:none;
+    background: url(../img/search.png) no-repeat 95% 50%;
+    background-color: #F1F1F1;
+    outline: none;
+}
+.search[type = search]{
+    padding-left: 10px;
+}

@@ -1,0 +1,30 @@
+body{
+    box-sizing: border-box;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 14px;
+    h1{
+        font-family: Montserrat;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 34px;
+    line-height: 120%;
+    color:white;
+    }
+    .button{
+        text-align: center;
+        border-radius: 20px;
+        background-color: $banner-bg;
+        border: 3px solid white;
+        color:white;
+        padding: 5px 10px;
+        transition: .2s;
+        &:hover{
+            opacity: 0.7;
+            transition: .2s;
+        }
+    }
+}
+.container{
+    max-width: 1128px;
+}

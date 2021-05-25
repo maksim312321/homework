@@ -179,26 +179,6 @@ body .button:hover {
   margin-left: 30px;
 }
 
-.advantages {
-  margin: 40px 0px;
-}
-.advantages .advantages__img, .advantages .advantages__wrapper {
-  display: inline-block;
-  vertical-align: middle;
-}
-.advantages .advantages__header {
-  font-size: 18px;
-  font-weight: 700;
-}
-.advantages .adnatages__text {
-  font-size: 14px;
-  font-weight: 400;
-  word-wrap: break-word;
-}
-.advantages .advantages__wrapper {
-  margin-left: 10px;
-}
-
 .viewed__item {
   margin-right: 10px;
 }

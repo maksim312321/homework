@@ -1,159 +1,23 @@
 //переменные
-@import "commons/variables.scss";
+@import "common/variables.scss";
 //шрифты
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Roboto:wght@400;700&display=swap');
 //обнуление стилей
-@import "commons/nullstyle.scss";
-//стили повторяющихся элементов
-
-.search{
-    font-family: Roboto;
-    font-weight: 700;
-    border-radius: 30px;
-    border:none;
-    background: url(../img/search.png) no-repeat 95% 50%;
-    background-color: #F1F1F1;
-    outline: none;
-}
-.search[type = search]{
-    padding-left: 10px;
-}
-//конец повторяющихся элементов
-
+@import "common/nullstyle.scss";
+//поиск
+@import "blocks/search.scss";
 //основные стили
-body{
-    box-sizing: border-box;
-    font-family: Roboto;
-    font-weight: 700;
-    font-size: 14px;
-    h1{
-        font-family: Montserrat;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 34px;
-    line-height: 120%;
-    color:white;
-    }
-    .button{
-        text-align: center;
-        border-radius: 20px;
-        background-color: $banner-bg;
-        border: 3px solid white;
-        color:white;
-        padding: 5px 10px;
-        transition: .2s;
-        &:hover{
-            opacity: 0.7;
-            transition: .2s;
-        }
-    }
-
-}
-.container{
-    max-width: 1128px;
-}
+@import "blocks/main.scss";
 //шапка
 @import "blocks/header.scss";
-
-.blog__slider{
-    // height: 270px;
-    position: relative;
-    overflow: hidden;
-
-    .slider__buttons{
-        position: absolute;
-        background:initial;
-        border:none;
-        
-    }
-    .slider__track{
-        transition: 0.2s;
-        display: flex;
-    }
-    .slider__prev{
-        bottom: 0;
-        left: 0;
-    }
-    .slider__next{
-        bottom: 0;
-        right: 0;
-    }
-}
-.blog__registration{
-    background-color: $banner-bg;
-    position: absolute;
-    height: 270px;
-    width: 100%;
-    .blog__button{
-        width: 40%;
-        position: absolute;
-        bottom: 40px;
-        left: 30px;
-    }
-    .blog__guy{
-        position: absolute;
-        right: -20px;
-        bottom: 0;
-    }
-    .blog__text{
-        margin-left: 30px;
-    }
-}
-.advantages{
-    margin: 40px 0px;
-    .advantages__img,.advantages__wrapper{
-        display: inline-block;
-        vertical-align: middle;
-    }
-    .advantages__header{
-        font-size: 18px;
-        font-weight: 700;
-    }
-    .adnatages__text{
-        font-size: 14px;
-        font-weight: 400;
-        word-wrap: break-word;
-    }
-    .advantages__wrapper{
-        margin-left: 10px;
-    }
-}
-.viewed__item{
-    margin-right: 10px;
-}
-.viewed_img{
-    text-align: center;
-}
-.viewed__header{
-    display: inline-block;
-    color:#1E273A;
-    margin: none;
-}
-.viewed__next{
-    background:initial;
-    border:none;
-    position: absolute;
-    right: 0;
-    top:30px;
-}
-
-.reviews{
-    margin-top: 30px;
-}
-.reviews__header{
-    display: inline-block;
-    color:#1E273A;
-}
-.reviews__next{
-    background:initial;
-    border:none;
-    position: absolute;
-    right: 0;
-    top:30px;
-}
-.reviews__wrapper{
-    padding-right: 300px;
-}
+//слайдер
+@import "blocks/slider.scss";
+//баннер под шапкой
+@import "blocks/wanttosell.scss";
+//просмотернно
+@import "blocks/viewed.scss";
+//отзывы
+@import "blocks/reviews.scss";
 //баннер
 @import "blocks/banner.scss";
 //футер

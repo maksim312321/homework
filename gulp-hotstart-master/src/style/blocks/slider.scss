@@ -1,0 +1,24 @@
+.blog__slider{
+    // height: 270px;
+    position: relative;
+    overflow: hidden;
+
+    .slider__buttons{
+        position: absolute;
+        background:initial;
+        border:none;
+        
+    }
+    .slider__track{
+        transition: 0.2s;
+        display: flex;
+    }
+    .slider__prev{
+        bottom: 0;
+        left: 0;
+    }
+    .slider__next{
+        bottom: 0;
+        right: 0;
+    }
+}
