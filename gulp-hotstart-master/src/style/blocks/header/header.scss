@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  height: 100px;
+  border-bottom: 2px solid gray;
+  align-items: center;
+  justify-content: space-around;
+
+  &__logo:hover {
+    svg {
+      fill-opacity: 10%;
+    }
+  }
+
+  &__hz:hover {
+    svg {
+      fill-opacity: 10%;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+include head.pug
+include header.pug
+include footer.pug
+include ../components/settings.pug
+    
+block variables
+    
+doctype html
+html(lang='ru')
+    +head(page_title || '', scripts || [])
+
+    body
+
+        +header()
+        +settings()
+        main
+            block content
+
+        +footer()
