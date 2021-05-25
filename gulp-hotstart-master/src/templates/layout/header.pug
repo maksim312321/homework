@@ -1,9 +1,23 @@
-mixin header()
-    header.header
-        a.header__logo(href="https://digital-spectr.com/" target="_blank")
-            include ../../images/icons/logo.svg
-        nav.header-nav
-            a.header-nav__link.header-nav__link_active(href="https://digital-spectr.com/" target="_blank") Главная
-            a.header-nav__link(href="https://digital-spectr.com/about/" target="_blank") О нас
-            a.header-nav__link(href="https://digital-spectr.com/blog/" target="_blank") Блог
-            a.header-nav__link(href="https://digital-spectr.com/services/" target="_blank") Услуги
+header.header
+  .row.header__row
+    .col-lg-2
+      img.header__logo(src='img/SOM logo.png' alt='логотип')
+    .col-lg-4
+      input.header__search.search(type='search')
+    .col-lg-2.col-lg-offset-2
+      p.header__currency
+    .col-lg-1
+      img.header__cart(src='img/cart.png' alt='корзина')
+    .col-lg-1
+      img.header_login(src='img/login.png' alt='')
+  .row.header__row.header__row_second
+    .col-lg-12
+      .header__menu
+        ul.menu__list
+          a.menu__link(href='') Leather goods
+          a.menu__link(href='products.html') Wood products
+          a.menu__link(href='') Wedding
+          a.menu__link(href='') Happy Birthday
+          a.menu__link(href='') Toys and entertainment
+          a.menu__link(href='') Art objects
+          a.menu__link(href='') Goods for needlework 

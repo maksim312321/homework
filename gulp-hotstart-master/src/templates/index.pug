@@ -1,10 +1,115 @@
-extends ./layout/layout
-
-block variables
-    - var page_title = 'Главная';
-
-block content
-    .container
-        ul
-            li
-                a(href="ui.html") UI Kit
+doctype html
+html
+	head
+		meta(charset='UTF-8')
+		meta(http-equiv='X-UA-Compatible' content='IE=edge')
+		meta(name='viewport' content='width=device-width, initial-scale=1.0')
+		link(rel='stylesheet' href='style.css')
+		link(rel='stylesheet' href='../src/styles/blocks/bootstrap.css')
+		script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js')
+		script(src='https://unpkg.com/swiper/swiper-bundle.min.js')
+		link(rel='stylesheet' href='https://unpkg.com/swiper/swiper-bundle.min.css')
+		title Document
+	body
+		.container
+			include include/header.pug
+			.blog
+				div(class='row blog__row')
+					.col-lg-8.col-sm-12.col-xs-12
+						div(class='blog__slider slider')
+							div(class='slider__track')
+								div(class='slider__item')
+									img(class='slider__png' src='img/slider_img.png' alt='')
+								div(class='slider__item')
+									img(class='slider__png' src='img/slider_img.png' alt='')
+								div(class='slider__item')
+									img(class='slider__png' src='img/slider_img.png' alt='')
+								div(class='slider__item')
+									img(class='slider__png' src='img/slider_img.png' alt='')
+							div(class='slider__dots')
+							button(class='slider__prev slider__buttons')
+								img(src='img/prev.png' alt='')
+							button(class='slider__next slider__buttons')
+								img(src='img/next.png' alt='')
+					.col-lg-4.col-sm-12.col-xs-12
+						div(class='blog__registration')
+							h1(class='blog__text') Want 
+								br
+								| to sell
+								br
+								| on SOM?
+							img(class='blog__guy' src='img/blog-guy.png' alt='человек')
+							button(class='blog__button button') Creater a store
+			.advantages
+				.row
+					.col-lg-4.col-sm-12.col-xs-12
+						img(class='advantages__img' src='img/planet.png' alt='планета')
+						div(class='advantages__wrapper')
+							h2(class='advantages__header') Unique everything
+							p(class='adnatages__text') We have millions of one-of-a-kind 
+								br
+								| items, so you can find whatever you
+								br
+								| need (or really, really want).
+					.col-lg-4.col-sm-12.col-xs-12
+						img(class='advantages__img' src='img/hand.png' alt='руки')
+						div(class='advantages__wrapper')
+							h2(class='advantages__header') Independent sellers
+							p(class='adnatages__text') Buy directly from someone who put 
+								br
+								| their heart and soul into making
+								br
+								| something special.
+					.col-lg-4.col-sm-12.col-xs-12
+						img(class='advantages__img' src='img/lock.png' alt='замок')
+						div(class='advantages__wrapper')
+							h2(class='advantages__header') Secure shopping 
+							p(class='adnatages__text') We use best-in-class technology to 
+								br
+								| protect your transactions.
+			.viewed.swiper-container
+				h1(class='viewed__header') Recently viewed
+				button(class='viewed__next')
+					img(src='img/стрелка кнопка.png' alt='')
+				div(class='viewed__wrapper swiper-wrapper')
+					div(class='viewed__item swapper-slide')
+						div(class='viewed_img')
+							img(src='img/карточка товара 1.png' alt='')
+						p(class='viewed__text') Personalized dog leash hanger handmade from the base
+						span(class='viewed__price') Sold
+					div(class='viewed__item swapper-slide')
+						div(class='viewed_img')
+							img(src='img/карточка товара 2.png' alt='')
+						p(class='viewed__text') Personalized dog leash hanger handmade from the base
+						span(class='viewed__price') Sold
+					div(class='viewed__item swapper-slide')
+						div(class='viewed_img')
+							img(src='img/карточка товара 3.png' alt='')
+						p(class='viewed__text') Personalized dog leash hanger handmade from the base
+						span(class='viewed__price') Sold
+					div(class='viewed__item swapper-slide')
+						div(class='viewed_img')
+							img(src='img/карточка товара 4.png' alt='')
+						p(class='viewed__text') Personalized dog leash hanger handmade from the base
+						span(class='viewed__price') Sold
+					div(class='viewed__item swapper-slide')
+						div(class='viewed_img')
+							img(src='img/карточка товара 1.png' alt='')
+						p(class='viewed__text') Personalized dog leash hanger handmade from the base
+						span(class='viewed__price') Sold
+					div(class='viewed__item swapper-slide')
+						div(class='viewed_img')
+							img(src='img/карточка товара 2.png' alt='')
+						p(class='viewed__text') Personalized dog leash hanger handmade from the base
+						span(class='viewed__price') Sold
+			.banner
+				div(class='banner__header')
+					h1 What is 
+						br
+						| Seller-online ?
+				div(class='banner__img')
+					img(src='img/gay2.png ' alt='')
+				button(class='banner__button button') Read more
+			include include/footer.pug
+            
+		

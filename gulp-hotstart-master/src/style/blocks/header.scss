@@ -1,0 +1,33 @@
+.header__row{
+    display: flex;
+    align-items: center;
+    padding: 25px 0;
+    border-bottom: 1px solid #EEEEEE;
+    .header__search{
+        width: 360px;
+        height: 32px;
+    }
+    .header__cart{
+        float: right;
+    }
+    .header_login{
+        float: right;
+    }
+    .menu__list{
+        // доделать
+        display: flex;
+        justify-content: space-between;
+        a{
+            color:#36425B;
+            text-decoration: none;
+            transition: .2s;
+            &:hover{
+                color:$banner-bg;
+                transition: .2s;
+            }
+        }
+    }
+}
+.header__row_second{
+    border:none;
+}
