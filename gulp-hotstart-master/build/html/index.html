@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../../src/style/bootstrap.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
   </head>
   <body>
@@ -24,7 +24,7 @@
             <p class="header__currency"></p>
           </div>
           <div class="col-lg-1"><img class="header__cart" src="../img/cart.png" alt="корзина"></div>
-          <div class="col-lg-1"><a href=""><img class="header_login" src="../img/login.png" alt=""></a></div>
+          <div class="col-lg-1"><a href=""><img class="header_login popup__main" src="../img/login.png" alt=""></a></div>
         </div>
         <div class="row header__row header__row_second">
           <div class="col-lg-12">
@@ -143,7 +143,68 @@
         </div>
       </div>
     </div>
+    
+    <div class="popup">
+
+
+      <div class="popup__main popup__item">
+
+        <div class="popup__content">
+          <h2 class="popup__title">Вход / Регистрация</h2>
+          <p class="popup__subtitle">Email</p>
+          <input class="popup__input" type="text" placeholder="Alexander.Ivanov@gmail.com">
+          <a href="#" class="popup__link popup__link-main">Проблема с входом ?</a>
+          <button class = "popup__btn">Продолжить как гость</button>
+        </div>
+
+      </div>
+
+
+      <div class="popup__registration popup__item">
+
+        <div class="popup__content">
+          <h2 class="popup__title">Регистрация</h2>
+          <p class="popup__subtitle">Почта</p>
+          <input class="popup__input" type="text" placeholder="Alexander.Ivanov@gmail.com">
+          <p class="popup__subtitle">Новый пароль</p>
+          <input class="popup__input" type="text">
+          <p class="popup__subtitle">Повторить пароль</p>
+          <input class="popup__input" type="text">
+          <button class = "popup__btn popup__btn_grey">Зарегистрироваться</button>
+        </div>
+
+      </div>
+
+
+      <div class="popup__authorization popup__item">
+
+        <div class="popup__content">
+          <h2 class="popup__title">Авторизация</h2>
+          <p class="popup__subtitle">Почта</p>
+          <input class="popup__input" type="text" placeholder="Alexander.Ivanov@gmail.com">
+          <p class="popup__subtitle">Пароль</p>
+          <input class="popup__input" type="text">
+          <a href="#" class="popup__link">Регистрация</a>
+          <a href="#" class="popup__link">Восстановить пароль</a>
+          <button class = "popup__btn popup__btn_grey">Войти</button>
+        </div>
+
+      </div>
+
+
+      <div class="popup__password-recovery popup__item">
+
+        <div class="popup__content">
+          <h2 class="popup__title">Восстановление пароля</h2>
+          <p class="popup__subtitle">Сссылка для восстановления пароля отправлена на <a href="#" class="popup_link">kosiku@mail.ru</a></p>
+          <button class = "popup__btn popup__btn_grey">Закрыть</button>
+        </div>
+
+      </div>
+
+    </div>
     <script src="../js/app.js"></script>
     <script src="../../src/js/registration.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </body>
 </html>

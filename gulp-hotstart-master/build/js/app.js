@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(function(){
     let position = 0;
     const track = $('.slider__track');//все слайды
     const item = $('.slider__item');//слайд
