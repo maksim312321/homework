@@ -1,9 +1,9 @@
+//обнуление стилей
+@import "common/nullstyle.scss";
 //переменные
 @import "common/variables.scss";
 //шрифты
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Roboto:wght@400;700&display=swap');
-//обнуление стилей
-@import "common/nullstyle.scss";
+@import "common/fonts.scss";
 //поиск
 @import "blocks/search.scss";
 //основные стили
