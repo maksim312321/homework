@@ -2,8 +2,6 @@
     display: none;
     &__item{
         box-shadow: 0 0 5px;
-    }
-    &__content{
         position: relative;
         margin: 50px;
         height: 80%;
@@ -54,8 +52,9 @@
     &__btn{
         position: absolute;
         bottom: 20px;
-        left:0;
-        width: 100%;
+        left:auto;
+        right: auto;
+        width: 80%;
         font-family: Roboto;
         font-style: normal;
         font-weight: bold;
